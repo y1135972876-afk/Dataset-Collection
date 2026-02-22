@@ -83,6 +83,21 @@ models/
 
 You only need to set `MODEL_DIR` to the paths above in the corresponding scripts.
 
+Other baseline models (optional):
+
+- **Longformer** (baseline for description extraction):
+  We use the public checkpoint `allenai/longformer-base-4096` from Hugging Face.
+  The model will be downloaded automatically by `transformers` on first use, so you do not need
+  to place it manually under `models/`.  
+  <https://huggingface.co/allenai/longformer-base-4096>
+
+- **BigBird** (baseline for description extraction):
+  We use the public checkpoint `google/bigbird-roberta-base` from Hugging Face.
+  Similarly, it is loaded by model name and will be downloaded automatically when needed.  
+  <https://huggingface.co/google/bigbird-roberta-base>
+
+
+
 #### Optional LLM for link extraction
 
 In the dataset-link extraction module we use a DeepSeek model as an optional LLM verifier:
@@ -137,7 +152,7 @@ Train_v1/
   Project1/                            # likely early / unrelated experiments; not used by main pipeline
 ```
 
-If you want a cleaner repo, you can move `Train_v1/`, `Project1/`, and various `test_*.py` files into a `legacy/` or `experiments/` directory, and add a one-line note in the README saying “early experiments, kept for reference only”.
+If you want a cleaner repo, you can move `Train_v1/`, `Project1/`, and various `test_*.py` files into a `legacy/` or `experiments/` directory, early experiments, kept for reference only.
 
 ### Running GROBID (for PDF → XML)
 
