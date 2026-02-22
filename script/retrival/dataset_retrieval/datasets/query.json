@@ -1,0 +1,1073 @@
+[
+  {
+    "query": "I need a multimodal QA dataset with verified step-by-step reasoning on HuggingFace; prefer problems around 8k context.",
+    "instruction": "Audience=Multimodal eval researchers; Keywords=[multimodal, QA, reasoning, verified]; Format=JSONL; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/Zenodo",
+    "positives": ["https://arxiv.org/pdf/2510.21881v1.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"lmms-lab/multimodal-open-r1-8k-verified","id":"lmms-lab/multimodal-open-r1-8k-verified","link":"https://huggingface.co/datasets/lmms-lab/multimodal-open-r1-8k-verified"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.21881v1.pdf","dataset_link":"https://huggingface.co/datasets/lmms-lab/multimodal-open-r1-8k-verified","domain":"multimodal","task":"qa+reasoning","generated_at":"2025-11-03T00:00:00Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Show me a large Amazon product reviews dataset on Kaggle for sentiment/rating prediction (CSV or Parquet).",
+    "instruction": "Audience=Sentiment engineers; Keywords=[Amazon, reviews, sentiment]; Format=CSV/Parquet; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude HuggingFace links",
+    "positives": ["https://arxiv.org/pdf/2510.20782v1.pdf"],
+    "ground_truth": {"host":"Kaggle","type":"dataset","name":"kritanjalijain/amazon-reviews","id":"kritanjalijain/amazon-reviews","link":"https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.20782v1.pdf","dataset_link":"https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews","domain":"nlp","task":"sentiment","generated_at":"2025-11-03T00:00:00Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Looking for a GUI interaction dataset (clicks, sliders, inputs) for agent grounding on HuggingFace.",
+    "instruction": "Audience=UI agent researchers; Keywords=[GUI, interaction, grounding]; Format=JSONL+images; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/Zenodo",
+    "positives": ["https://arxiv.org/pdf/2505.13227v3.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"SuperAGI/GUIDE","id":"SuperAGI/GUIDE","link":"https://huggingface.co/datasets/SuperAGI/GUIDE"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2505.13227v3.pdf","dataset_link":"https://huggingface.co/datasets/SuperAGI/GUIDE","domain":"agents","task":"ui-grounding","generated_at":"2025-11-03T00:00:00Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Where can I get a legal exam multiple-choice benchmark with answers on HuggingFace for LLM evaluation?",
+    "instruction": "Audience=Legal LLM eval; Keywords=[LEXam, legal exam, MCQ]; Format=JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle",
+    "positives": ["https://arxiv.org/pdf/2505.12864v5.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"LEXam-Benchmark/LEXam","id":"LEXam-Benchmark/LEXam","link":"https://huggingface.co/datasets/LEXam-Benchmark/LEXam"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2505.12864v5.pdf","dataset_link":"https://huggingface.co/datasets/LEXam-Benchmark/LEXam","domain":"legal","task":"exam-eval","generated_at":"2025-11-03T00:00:01Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Need an end-to-end app-dev benchmark with Behave scenarios for software agents (HuggingFace preferred).",
+    "instruction": "Audience=Software agents; Keywords=[E2E, Behave, UI tests]; Format=ZIP/JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Zenodo",
+    "positives": ["https://arxiv.org/pdf/2510.14509v2.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"GuanZhiZhao/E2EDev","id":"GuanZhiZhao/E2EDev","link":"https://huggingface.co/datasets/GuanZhiZhao/E2EDev"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.14509v2.pdf","dataset_link":"https://huggingface.co/datasets/GuanZhiZhao/E2EDev","domain":"agents","task":"e2e-dev-eval","generated_at":"2025-11-03T00:00:01Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Show a video QA dataset focusing on human-centred causal reasoning (HuggingFace).",
+    "instruction": "Audience=Video understanding; Keywords=[causal, video QA, human behavior]; Format=MP4+JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle",
+    "positives": ["https://arxiv.org/pdf/2505.19853v2.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"causal2needles/Causal2Needles","id":"causal2needles/Causal2Needles","link":"https://huggingface.co/datasets/causal2needles/Causal2Needles"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2505.19853v2.pdf","dataset_link":"https://huggingface.co/datasets/causal2needles/Causal2Needles","domain":"vision-video","task":"causal-qa","generated_at":"2025-11-03T00:00:02Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Kaggle dataset with images of mathematical program formulae (PNG + CSV annotations) for OR + vision.",
+    "instruction": "Audience=OR+Vision; Keywords=[mathematical programs, images]; Format=PNG+CSV; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude HuggingFace",
+    "positives": ["https://arxiv.org/pdf/2510.21436v1.pdf"],
+    "ground_truth": {"host":"Kaggle","type":"dataset","name":"ankurzing/autoopt-11k","id":"ankurzing/autoopt-11k","link":"https://www.kaggle.com/datasets/ankurzing/autoopt-11k"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.21436v1.pdf","dataset_link":"https://www.kaggle.com/datasets/ankurzing/autoopt-11k","domain":"vision+or","task":"equation-image","generated_at":"2025-11-03T00:00:02Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "I’m looking for a cross-cultural commonsense/bias benchmark on HuggingFace (JSON).",
+    "instruction": "Audience=Safety/Alignment; Keywords=[cultural commonsense, bias]; Format=JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Zenodo",
+    "positives": ["https://arxiv.org/pdf/2509.21798v2.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"geyang627/CARE","id":"geyang627/CARE","link":"https://huggingface.co/datasets/geyang627/CARE"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2509.21798v2.pdf","dataset_link":"https://huggingface.co/datasets/geyang627/CARE","domain":"safety","task":"commonsense-bias","generated_at":"2025-11-03T00:00:03Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "HuggingFace dataset for Slovene pragmatics MCQA (semantics/pragmatics focus).",
+    "instruction": "Audience=Multilingual NLP; Keywords=[pragmatics, Slovene, MCQA]; Format=JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle",
+    "positives": ["https://arxiv.org/pdf/2510.21575v1.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"cfilt/PUB","id":"cfilt/PUB","link":"https://huggingface.co/datasets/cfilt/PUB"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.21575v1.pdf","dataset_link":"https://huggingface.co/datasets/cfilt/PUB","domain":"nlp","task":"pragmatics-mcqa","generated_at":"2025-11-03T00:00:03Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Long-document financial QA dataset (HuggingFace), ideally extending FinQA with filings and tables.",
+    "instruction": "Audience=Financial QA; Keywords=[DocFinQA, long-document QA]; Format=JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Zenodo",
+    "positives": ["https://arxiv.org/pdf/2401.06915v3.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"kensho/DocFinQA","id":"kensho/DocFinQA","link":"https://huggingface.co/datasets/kensho/DocFinQA"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2401.06915v3.pdf","dataset_link":"https://huggingface.co/datasets/kensho/DocFinQA","domain":"finance","task":"long-doc-qa","generated_at":"2025-11-03T00:00:04Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Multimodal climate communications benchmark with oil/gas ad videos (YouTube IDs + JSONL) on HuggingFace.",
+    "instruction": "Audience=Sustainability comms; Keywords=[climate ads, YouTube, JSONL]; Format=JSONL+MP4; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle",
+    "positives": ["https://arxiv.org/pdf/2510.21679v1.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"climate-nlp/multimodal-oil-gas-benchmark","id":"climate-nlp/multimodal-oil-gas-benchmark","link":"https://huggingface.co/datasets/climate-nlp/multimodal-oil-gas-benchmark"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.21679v1.pdf","dataset_link":"https://huggingface.co/datasets/climate-nlp/multimodal-oil-gas-benchmark","domain":"multimodal","task":"ads-analysis","generated_at":"2025-11-03T00:00:04Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Zenodo record for OMIn tool-use/benchmark resources (public data deposit).",
+    "instruction": "Audience=Tool-use eval; Keywords=[OMIn, benchmark, repository]; Format=Zenodo record; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude HuggingFace mirrors",
+    "positives": ["https://arxiv.org/pdf/2507.22935v3.pdf"],
+    "ground_truth": {"host":"Zenodo","type":"record","name":"OMIn data repository","id":"13333825","link":"https://zenodo.org/records/13333825"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2507.22935v3.pdf","dataset_link":"https://zenodo.org/records/13333825","domain":"systems","task":"tool-benchmark","generated_at":"2025-11-03T00:00:05Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Medical dialog dataset (ChatDoctor/HealthCareMagic ~100k turns) on HuggingFace for healthcare QA.",
+    "instruction": "Audience=Healthcare NLP; Keywords=[Medical QA, ChatDoctor]; Format=JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle",
+    "positives": ["https://arxiv.org/pdf/2505.14524v3.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"iecjsu/lavita-ChatDoctor-HealthCareMagic-100k","id":"iecjsu/lavita-ChatDoctor-HealthCareMagic-100k","link":"https://huggingface.co/datasets/iecjsu/lavita-ChatDoctor-HealthCareMagic-100k"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2505.14524v3.pdf","dataset_link":"https://huggingface.co/datasets/iecjsu/lavita-ChatDoctor-HealthCareMagic-100k","domain":"healthcare","task":"dialogue","generated_at":"2025-11-03T00:00:05Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Global POI dataset integrating Foursquare and OSM; link me to the OSF project page.",
+    "instruction": "Audience=Geocomputation; Keywords=[POI, Foursquare, OSM]; Format=GeoJSON/CSV; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude HuggingFace/Kaggle",
+    "positives": ["https://arxiv.org/pdf/2510.21342v1.pdf"],
+    "ground_truth": {"host":"OSF","type":"project","name":"World-POI","id":"p96uf","link":"https://osf.io/p96uf"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.21342v1.pdf","dataset_link":"https://osf.io/p96uf","domain":"geospatial","task":"poi-integration","generated_at":"2025-11-03T00:00:06Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Scientific image dataset with spatio-temporal annotations on HuggingFace; need JSON + images.",
+    "instruction": "Audience=Scientific visualization; Keywords=[spatiotemporal, scientific images]; Format=JSON+images; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Zenodo mirrors",
+    "positives": ["https://arxiv.org/pdf/2510.07653v2.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"jiawennnn/STimage-1K4M","id":"jiawennnn/STimage-1K4M","link":"https://huggingface.co/datasets/jiawennnn/STimage-1K4M"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.07653v2.pdf","dataset_link":"https://huggingface.co/datasets/jiawennnn/STimage-1K4M","domain":"vision-science","task":"annotation","generated_at":"2025-11-03T00:00:06Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Enterprise-style Text-to-SQL benchmark with large schemas and multiple dialects (HuggingFace).",
+    "instruction": "Audience=Text-to-SQL; Keywords=[API, large schema, dialects]; Format=JSON/SQL; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle",
+    "positives": ["https://arxiv.org/pdf/2510.16470v1.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"ibm-research/SQL-API-Bench","id":"ibm-research/SQL-API-Bench","link":"https://huggingface.co/datasets/ibm-research/SQL-API-Bench"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.16470v1.pdf","dataset_link":"https://huggingface.co/datasets/ibm-research/SQL-API-Bench","domain":"nlp-db","task":"text-to-sql-bench","generated_at":"2025-11-03T00:00:07Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Synthetic Text-to-SQL training data on HuggingFace (JSON, large coverage of schema patterns).",
+    "instruction": "Audience=Data generation/SQL; Keywords=[synthetic, text-to-sql]; Format=JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Zenodo mirrors",
+    "positives": ["https://arxiv.org/pdf/2503.12730v5.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"gretelai/synthetic-text-to-sql","id":"gretelai/synthetic-text-to-sql","link":"https://huggingface.co/datasets/gretelai/synthetic-text-to-sql"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2503.12730v5.pdf","dataset_link":"https://huggingface.co/datasets/gretelai/synthetic-text-to-sql","domain":"nlp-db","task":"synthetic-training","generated_at":"2025-11-03T00:00:07Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "I need public arXiv metadata/user-profiles dumps; link me to the GitHub release page.",
+    "instruction": "Audience=Scholarly NLP; Keywords=[arXiv, SciNUP]; Format=Tar/JSONL; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/HF mirrors",
+    "positives": ["https://arxiv.org/pdf/2510.21352v1.pdf"],
+    "ground_truth": {"host":"GitHub","type":"release","name":"arxiv-public-datasets v0.2.0","id":"v0.2.0","link":"https://github.com/mattbierbaum/arxiv-public-datasets/releases/tag/v0.2.0"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.21352v1.pdf","dataset_link":"https://github.com/mattbierbaum/arxiv-public-datasets/releases/tag/v0.2.0","domain":"scholarly-nlp","task":"metadata+profiles","generated_at":"2025-11-03T00:00:08Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Looking for an image personalization/preference dataset for diffusion models (official website link OK).",
+    "instruction": "Audience=Diffusion personalization; Keywords=[preference, diffusion, prompts]; Format=Images+JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle mirrors",
+    "positives": ["https://arxiv.org/pdf/2510.18433v1.pdf"],
+    "ground_truth": {"host":"Website","type":"dataset","name":"ImageGem","id":"imagegem-iccv2025","link":"https://maps-research.github.io/imagegem-iccv2025/"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.18433v1.pdf","dataset_link":"https://maps-research.github.io/imagegem-iccv2025/","domain":"vision","task":"personalization","generated_at":"2025-11-03T00:00:08Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Show me a legal retrieval/embedding benchmark subset (SCALR) suitable for sentence embeddings (HuggingFace).",
+    "instruction": "Audience=Legal IR; Keywords=[legal IR, SCALR, embeddings]; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle",
+    "positives": ["https://arxiv.org/pdf/2510.19365v1.pdf"],
+    "ground_truth": {"host":"HuggingFace","type":"dataset","name":"isaacus/mleb-scalr","id":"isaacus/mleb-scalr","link":"https://huggingface.co/datasets/isaacus/mleb-scalr"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.19365v1.pdf","dataset_link":"https://huggingface.co/datasets/isaacus/mleb-scalr","domain":"legal","task":"embedding-bench","generated_at":"2025-11-03T00:00:09Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "I need a household indoor navigation/understanding dataset for embodied agents (official project page).",
+    "instruction": "Audience=Embodied AI; Keywords=[indoor navigation, house tour]; Format=Video+JSON; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude HuggingFace mirrors",
+    "positives": ["https://arxiv.org/pdf/2510.18054v1.pdf"],
+    "ground_truth": {"host":"Website","type":"dataset","name":"House-Tour","id":"house-tour","link":"https://house-tour.github.io/"},
+    "metadata": {"paper_link":"https://arxiv.org/pdf/2510.18054v1.pdf","dataset_link":"https://house-tour.github.io/","domain":"embodied-ai","task":"navigation","generated_at":"2025-11-03T00:00:09Z","source":"arxiv-datasets-aggregated"}
+  },
+  {
+    "query": "Is there a dataset for type, description, boolean from the official project page? If so, link the page (e.g., \"draft-07/schema\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['type', 'description', 'boolean', 'schema', 'string']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.27094v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "draft-07/schema",
+      "id": "draft-07/schema",
+      "link": "http://json-schema.org/draft-07/schema#"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.27094v1.pdf",
+      "dataset_link": "http://json-schema.org/draft-07/schema#",
+      "domain": "mt",
+      "task": "translation",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "I'm searching for a dataset on HuggingFace for piano, user, data-testid; link the dataset page (prefer \"GuanZhiZhao/E2EDev\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['piano', 'user', 'data-testid', 'integration', 'behave']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/Zenodo",
+    "positives": [
+      "https://arxiv.org/pdf/2510.14509v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "HuggingFace",
+      "type": "dataset",
+      "name": "GuanZhiZhao/E2EDev",
+      "id": "GuanZhiZhao/E2EDev",
+      "link": "https://huggingface.co/datasets/GuanZhiZhao/E2EDev"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.14509v2.pdf",
+      "dataset_link": "https://huggingface.co/datasets/GuanZhiZhao/E2EDev",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "What is a good dataset for a dataset on GitHub for background, shown, runs; link the dataset page (prefer \"courtois-neuromod/task_stimuli\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['background', 'shown', 'runs', 'session', 'datalad']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2507.09024v4.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "courtois-neuromod/task_stimuli",
+      "id": "courtois-neuromod/task_stimuli",
+      "link": "https://github.com/courtois-neuromod/task_stimuli"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2507.09024v4.pdf",
+      "dataset_link": "https://github.com/courtois-neuromod/task_stimuli",
+      "domain": "ir",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Please share a dataset from the official project page for resource, authorization, metadata; link the dataset page (prefer \"as1.example.com\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['resource', 'authorization', 'metadata', 'agent', 'server']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.26702v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "as1.example.com",
+      "id": "as1.example.com",
+      "link": "https://as1.example.com"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.26702v1.pdf",
+      "dataset_link": "https://as1.example.com",
+      "domain": "medical",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Find a dataset on GitHub covering true, enforce, lowercase; ideally named \"hiyouga/LLaMA-Factory\".",
+    "instruction": "Audience=Medical AI researchers; Keywords=['true', 'enforce', 'lowercase', 'website', 'design']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.23272v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "hiyouga/LLaMA-Factory",
+      "id": "hiyouga/LLaMA-Factory",
+      "link": "https://github.com/hiyouga/LLaMA-Factory"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.23272v1.pdf",
+      "dataset_link": "https://github.com/hiyouga/LLaMA-Factory",
+      "domain": "3d-vision",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "I want a dataset from the official project page for distance, focus, interpolation; link the dataset page (prefer \"influx.cs.princeton.edu\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['distance', 'focus', 'interpolation', 'extrapolation', 'lens-inspired']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.23589v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "influx.cs.princeton.edu",
+      "id": "influx.cs.princeton.edu",
+      "link": "https://influx.cs.princeton.edu/"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.23589v1.pdf",
+      "dataset_link": "https://influx.cs.princeton.edu/",
+      "domain": "medical",
+      "task": "benchmark",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "I need a dataset on GitHub for query, artificial-hivemind, classification; link the dataset page (prefer \"liweijiang/artificial-hivemind\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['query', 'artificial-hivemind', 'classification', 'infinity-chat', 'liweijiang']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.22954v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "liweijiang/artificial-hivemind",
+      "id": "liweijiang/artificial-hivemind",
+      "link": "https://github.com/liweijiang/artificial-hivemind"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.22954v1.pdf",
+      "dataset_link": "https://github.com/liweijiang/artificial-hivemind",
+      "domain": "medical",
+      "task": "safety",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Any dataset for a dataset on Kaggle for problem, variables, added; link the dataset page (prefer \"ankurzing/autoopt-11k\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['problem', 'variables', 'added', 'complexities', 'constraints']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude HuggingFace",
+    "positives": [
+      "https://arxiv.org/pdf/2510.21436v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Kaggle",
+      "type": "dataset",
+      "name": "ankurzing/autoopt-11k",
+      "id": "ankurzing/autoopt-11k",
+      "link": "https://www.kaggle.com/datasets/ankurzing/autoopt-11k"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.21436v1.pdf",
+      "dataset_link": "https://www.kaggle.com/datasets/ankurzing/autoopt-11k",
+      "domain": "ir",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Looking for a dataset on Zenodo for social, instagram, content; link the dataset page (prefer \"12608602\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['social', 'instagram', 'content', 'pages', 'computational']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.19616v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Zenodo",
+      "type": "dataset",
+      "name": "12608602",
+      "id": "12608602",
+      "link": "https://zenodo.org/records/12608602"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.19616v1.pdf",
+      "dataset_link": "https://zenodo.org/records/12608602",
+      "domain": "medical",
+      "task": "benchmark",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Recommend a dataset on HuggingFace covering text, restrictions, json; ideally named \"datasets\".",
+    "instruction": "Audience=Medical AI researchers; Keywords=['text', 'restrictions', 'json', 'associated', 'synthesis']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/Zenodo",
+    "positives": [
+      "https://arxiv.org/pdf/2509.01042v3.pdf"
+    ],
+    "ground_truth": {
+      "host": "HuggingFace",
+      "type": "dataset",
+      "name": "datasets",
+      "id": "datasets",
+      "link": "https://huggingface.co/datasets/"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2509.01042v3.pdf",
+      "dataset_link": "https://huggingface.co/datasets/",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Is there a dataset for step, answer, nstep on GitHub? If so, link the page (e.g., \"JornyWan/PRISM-Bench\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['step', 'answer', 'nstep', 'character', 'reasoning']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.23594v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "JornyWan/PRISM-Bench",
+      "id": "JornyWan/PRISM-Bench",
+      "link": "https://github.com/JornyWan/PRISM-Bench"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.23594v2.pdf",
+      "dataset_link": "https://github.com/JornyWan/PRISM-Bench",
+      "domain": "medical",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Help me find a dataset on HuggingFace for questions, implications, non-factoid; link the dataset page (prefer \"ExponentialScience/ESG-DLT-NER\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['questions', 'implications', 'non-factoid', 'processes', 'answers']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/Zenodo",
+    "positives": [
+      "https://arxiv.org/pdf/2508.03000v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "HuggingFace",
+      "type": "dataset",
+      "name": "ExponentialScience/ESG-DLT-NER",
+      "id": "ExponentialScience/ESG-DLT-NER",
+      "link": "https://huggingface.co/datasets/ExponentialScience/ESG-DLT-NER"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2508.03000v2.pdf",
+      "dataset_link": "https://huggingface.co/datasets/ExponentialScience/ESG-DLT-NER",
+      "domain": "ir",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "What is a good dataset for a dataset on GitHub for text, reference, feedback; link the dataset page (prefer \"Paper2Poster/Paper2Poster\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['text', 'reference', 'feedback', 'overflow', 'content']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2505.21497v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "Paper2Poster/Paper2Poster",
+      "id": "Paper2Poster/Paper2Poster",
+      "link": "https://github.com/Paper2Poster/Paper2Poster"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2505.21497v2.pdf",
+      "dataset_link": "https://github.com/Paper2Poster/Paper2Poster",
+      "domain": "ir",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "How do I get a dataset on Kaggle for vegetation, collected, pasture; link the dataset page (prefer \"competitions/csiro-biomass\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['vegetation', 'collected', 'pasture', 'biomass', 'kaggle']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude HuggingFace",
+    "positives": [
+      "https://arxiv.org/pdf/2510.22916v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Kaggle",
+      "type": "dataset",
+      "name": "competitions/csiro-biomass",
+      "id": "competitions/csiro-biomass",
+      "link": "https://www.kaggle.com/competitions/csiro-biomass"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.22916v1.pdf",
+      "dataset_link": "https://www.kaggle.com/competitions/csiro-biomass",
+      "domain": "medical",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Find a dataset on GitHub covering endpoint, sub_id, summary; ideally named \"RocketChat/Rocket.Chat-Open-API\".",
+    "instruction": "Audience=Medical AI researchers; Keywords=['endpoint', 'sub_id', 'summary', 'rgname', 'format']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.19286v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "RocketChat/Rocket.Chat-Open-API",
+      "id": "RocketChat/Rocket.Chat-Open-API",
+      "link": "https://github.com/RocketChat/Rocket.Chat-Open-API"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.19286v1.pdf",
+      "dataset_link": "https://github.com/RocketChat/Rocket.Chat-Open-API",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "I need a dataset from the official project page for mission, points, group; link the dataset page (prefer \"view/lan-cb\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['mission', 'points', 'group', 'finish', 'robots']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2507.16068v3.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "view/lan-cb",
+      "id": "view/lan-cb",
+      "link": "https://sites.google.com/view/lan-cb"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2507.16068v3.pdf",
+      "dataset_link": "https://sites.google.com/view/lan-cb",
+      "domain": "ir",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Where can I download a dataset on GitHub for type, question, description? Prefer \"99hgz/WebSeer\" if available.",
+    "instruction": "Audience=Medical AI researchers; Keywords=['type', 'question', 'description', 'function', 'answer']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.18798v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "99hgz/WebSeer",
+      "id": "99hgz/WebSeer",
+      "link": "https://github.com/99hgz/WebSeer"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.18798v1.pdf",
+      "dataset_link": "https://github.com/99hgz/WebSeer",
+      "domain": "medical",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Point me to a dataset from the official project page for answer, editing, multi-round; link the dataset page (prefer \"safeeditor.github.io\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['answer', 'editing', 'multi-round', 'prohibited', 'generated']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.24820v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "safeeditor.github.io",
+      "id": "safeeditor.github.io",
+      "link": "https://safeeditor.github.io/"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.24820v1.pdf",
+      "dataset_link": "https://safeeditor.github.io/",
+      "domain": "medical",
+      "task": "safety",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Any dataset for a dataset from the official project page for incinerated, gemini-1, billion; link the dataset page (prefer \"nips.cc\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['incinerated', 'gemini-1', 'billion', 'tonnes', 'amount']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2505.13444v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "nips.cc",
+      "id": "nips.cc",
+      "link": "https://nips.cc/"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2505.13444v2.pdf",
+      "dataset_link": "https://nips.cc/",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Looking for a dataset from the official project page for generation, mmwalk, images; link the dataset page (prefer \"10.7910/DVN/KKDXDK\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['generation', 'mmwalk', 'images', 'pairs', 'segmentation']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.11520v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "10.7910/DVN/KKDXDK",
+      "id": "10.7910/DVN/KKDXDK",
+      "link": "https://doi.org/10.7910/DVN/KKDXDK"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.11520v2.pdf",
+      "dataset_link": "https://doi.org/10.7910/DVN/KKDXDK",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Recommend a dataset on HuggingFace covering iraq, accuracy, average; ideally named \"edinburgh-dawg/mmlu-redux-2.0\".",
+    "instruction": "Audience=Medical AI researchers; Keywords=['iraq', 'accuracy', 'average', 'each', 'five']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/Zenodo",
+    "positives": [
+      "https://arxiv.org/pdf/2510.27543v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "HuggingFace",
+      "type": "dataset",
+      "name": "edinburgh-dawg/mmlu-redux-2.0",
+      "id": "edinburgh-dawg/mmlu-redux-2.0",
+      "link": "https://huggingface.co/datasets/edinburgh-dawg/mmlu-redux-2.0"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.27543v1.pdf",
+      "dataset_link": "https://huggingface.co/datasets/edinburgh-dawg/mmlu-redux-2.0",
+      "domain": "ir",
+      "task": "qa",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Is there a dataset for similarity, particular, attention from the official project page? If so, link the page (e.g., \"forms.gle\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['similarity', 'particular', 'attention', 'process', 'authors']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.20926v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "forms.gle",
+      "id": "forms.gle",
+      "link": "https://forms.gle/"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.20926v1.pdf",
+      "dataset_link": "https://forms.gle/",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "I'm searching for a dataset on GitHub for video, keyframes, although; link the dataset page (prefer \"gouga10\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['video', 'keyframes', 'although', 'activity', 'designed']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.21424v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "gouga10",
+      "id": "gouga10",
+      "link": "https://github.com/gouga10/"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.21424v1.pdf",
+      "dataset_link": "https://github.com/gouga10/",
+      "domain": "medical",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Give me a dataset on GitHub for plaintiff, claims, court; link the dataset page (prefer \"JosieZh\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['plaintiff', 'claims', 'court', 'causes', 'action']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2508.17234v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "JosieZh",
+      "id": "JosieZh",
+      "link": "https://github.com/JosieZh"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2508.17234v2.pdf",
+      "dataset_link": "https://github.com/JosieZh",
+      "domain": "medical",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "What is a good dataset for a dataset on GitHub for html, content, evaluation; link the dataset page (prefer \"ishaanv1206/Decoding-Latent-Attack-Surfaces-in-LLMs-Prompt-Injection-via-HTML-in-Web-Summarization\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['html', 'content', 'evaluation', 'github', 'extraction']; Format=CSV/Parquet; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2509.05831v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "ishaanv1206/Decoding-Latent-Attack-Surfaces-in-LLMs-Prompt-Injection-via-HTML-in-Web-Summarization",
+      "id": "ishaanv1206/Decoding-Latent-Attack-Surfaces-in-LLMs-Prompt-Injection-via-HTML-in-Web-Summarization",
+      "link": "https://github.com/ishaanv1206/Decoding-Latent-Attack-Surfaces-in-LLMs-Prompt-Injection-via-HTML-in-Web-Summarization"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2509.05831v2.pdf",
+      "dataset_link": "https://github.com/ishaanv1206/Decoding-Latent-Attack-Surfaces-in-LLMs-Prompt-Injection-via-HTML-in-Web-Summarization",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Please share a dataset from the official project page for accessed, https, september; link the dataset page (prefer \"author/epanswers\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['accessed', 'https', 'september', 'europa', 'topic']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.19723v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "author/epanswers",
+      "id": "author/epanswers",
+      "link": "https://epthinktank.eu/author/epanswers"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.19723v1.pdf",
+      "dataset_link": "https://epthinktank.eu/author/epanswers",
+      "domain": "ir",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "How do I get a dataset on GitHub for user, search, city; link the dataset page (prefer \"openaiotlab/ContextAgent\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['user', 'search', 'city', 'proactive', 'wikipedia']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2505.14668v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "openaiotlab/ContextAgent",
+      "id": "openaiotlab/ContextAgent",
+      "link": "https://github.com/openaiotlab/ContextAgent"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2505.14668v2.pdf",
+      "dataset_link": "https://github.com/openaiotlab/ContextAgent",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Find a dataset on GitHub covering question, answer, context; ideally named \"Chen-1031/Cross-Task-ICL\".",
+    "instruction": "Audience=Medical AI researchers; Keywords=['question', 'answer', 'context', 'reasoning', 'options']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.24528v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "Chen-1031/Cross-Task-ICL",
+      "id": "Chen-1031/Cross-Task-ICL",
+      "link": "https://github.com/Chen-1031/Cross-Task-ICL"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.24528v1.pdf",
+      "dataset_link": "https://github.com/Chen-1031/Cross-Task-ICL",
+      "domain": "medical",
+      "task": "qa",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Direct me to a dataset from the official project page for evaluation, annotators, accelerate; link the dataset page (prefer \"anonymous.4open\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['evaluation', 'annotators', 'accelerate', 'developing', 'auto-fill']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2504.21625v6.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "anonymous.4open",
+      "id": "anonymous.4open",
+      "link": "https://anonymous.4open"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2504.21625v6.pdf",
+      "dataset_link": "https://anonymous.4open",
+      "domain": "medical",
+      "task": "benchmark",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Suggest a dataset on GitHub covering description, objects, json; ideally named \"EmbodiedCity/Open3D-VQA.code\".",
+    "instruction": "Audience=Medical AI researchers; Keywords=['description', 'objects', 'json', 'duplicates', 'qualifying']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2503.11094v4.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "EmbodiedCity/Open3D-VQA.code",
+      "id": "EmbodiedCity/Open3D-VQA.code",
+      "link": "https://github.com/EmbodiedCity/Open3D-VQA.code"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2503.11094v4.pdf",
+      "dataset_link": "https://github.com/EmbodiedCity/Open3D-VQA.code",
+      "domain": "3d-vision",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "I want a dataset on HuggingFace for codeforces, luogu, programming; link the dataset page (prefer \"BAAI/TACO\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['codeforces', 'luogu', 'programming', 'discussion', 'following']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/Zenodo",
+    "positives": [
+      "https://arxiv.org/pdf/2505.12925v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "HuggingFace",
+      "type": "dataset",
+      "name": "BAAI/TACO",
+      "id": "BAAI/TACO",
+      "link": "https://huggingface.co/datasets/BAAI/TACO"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2505.12925v2.pdf",
+      "dataset_link": "https://huggingface.co/datasets/BAAI/TACO",
+      "domain": "ir",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Fetch a dataset on GitHub covering information, templates, merchant; ideally named \"tsinghua-fib-lab/LocalEval\".",
+    "instruction": "Audience=Medical AI researchers; Keywords=['information', 'templates', 'merchant', 'category', 'agent']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2506.02720v3.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "tsinghua-fib-lab/LocalEval",
+      "id": "tsinghua-fib-lab/LocalEval",
+      "link": "https://github.com/tsinghua-fib-lab/LocalEval"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2506.02720v3.pdf",
+      "dataset_link": "https://github.com/tsinghua-fib-lab/LocalEval",
+      "domain": "ir",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Where can I download a dataset from the official project page for case, unit, production? Prefer \"ollama.com\" if available.",
+    "instruction": "Audience=Medical AI researchers; Keywords=['case', 'unit', 'production', 'field', 'crop']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.23893v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "ollama.com",
+      "id": "ollama.com",
+      "link": "https://ollama.com"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.23893v1.pdf",
+      "dataset_link": "https://ollama.com",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Point me to a dataset from the official project page for training, error, each; link the dataset page (prefer \"Aegis-Website\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['training', 'error', 'each', 'corresponding', 'attribution']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2509.14295v4.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "Aegis-Website",
+      "id": "Aegis-Website",
+      "link": "https://kfq20.github.io/Aegis-Website/"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2509.14295v4.pdf",
+      "dataset_link": "https://kfq20.github.io/Aegis-Website/",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Looking for a dataset on HuggingFace for zaklju, multiple-choice, question; link the dataset page (prefer \"cfilt/PUB\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['zaklju', 'multiple-choice', 'question', 'each', 'understanding']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude Kaggle/Zenodo",
+    "positives": [
+      "https://arxiv.org/pdf/2510.21575v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "HuggingFace",
+      "type": "dataset",
+      "name": "cfilt/PUB",
+      "id": "cfilt/PUB",
+      "link": "https://huggingface.co/datasets/cfilt/PUB"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.21575v1.pdf",
+      "dataset_link": "https://huggingface.co/datasets/cfilt/PUB",
+      "domain": "ir",
+      "task": "benchmark",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Recommend a dataset from the official project page covering tokens, sentences, sentence; ideally named \"platform\".",
+    "instruction": "Audience=Medical AI researchers; Keywords=['tokens', 'sentences', 'sentence', 'high-surprisal', 'combo-humor']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.24538v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "platform",
+      "id": "platform",
+      "link": "https://platform"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.24538v1.pdf",
+      "dataset_link": "https://platform",
+      "domain": "medical",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Link me to a dataset on OSF for integration, integrated, foursquare; link the dataset page (prefer \"p96uf\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['integration', 'integrated', 'foursquare', 'world-poi', 'sources']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.21342v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "OSF",
+      "type": "dataset",
+      "name": "p96uf",
+      "id": "p96uf",
+      "link": "https://osf.io/p96uf"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.21342v1.pdf",
+      "dataset_link": "https://osf.io/p96uf",
+      "domain": "medical",
+      "task": "dataset-discovery",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Is there a dataset for wildfirex-slam, wildfire, images from the official project page? If so, link the page (e.g., \"wildfirexslam\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['wildfirex-slam', 'wildfire', 'images', 'comprehensive', 'furthermore']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.27133v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Website",
+      "type": "dataset",
+      "name": "wildfirexslam",
+      "id": "wildfirexslam",
+      "link": "https://zhicongsun.github.io/wildfirexslam"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.27133v1.pdf",
+      "dataset_link": "https://zhicongsun.github.io/wildfirexslam",
+      "domain": "medical",
+      "task": "navigation",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Help me find a dataset on GitHub for following, entries, than; link the dataset page (prefer \"quanlin-wu/unisite\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['following', 'entries', 'than', 'predictions', 'unisite-ds']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2506.03237v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "quanlin-wu/unisite",
+      "id": "quanlin-wu/unisite",
+      "link": "https://github.com/quanlin-wu/unisite"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2506.03237v2.pdf",
+      "dataset_link": "https://github.com/quanlin-wu/unisite",
+      "domain": "medical",
+      "task": "benchmark",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "Please share a dataset on GitHub for safety, user-specific, user; link the dataset page (prefer \"yeonjun-in/U-SafeBench\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['safety', 'user-specific', 'user', 'definition', 'profiles']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2502.15086v2.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "yeonjun-in/U-SafeBench",
+      "id": "yeonjun-in/U-SafeBench",
+      "link": "https://github.com/yeonjun-in/U-SafeBench"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2502.15086v2.pdf",
+      "dataset_link": "https://github.com/yeonjun-in/U-SafeBench",
+      "domain": "medical",
+      "task": "safety",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "How do I get a dataset on GitHub for images, fusion, information; link the dataset page (prefer \"1hzf/MLSN\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['images', 'fusion', 'information', 'trained', 'tested']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude mirrors",
+    "positives": [
+      "https://arxiv.org/pdf/2510.24379v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "GitHub",
+      "type": "dataset",
+      "name": "1hzf/MLSN",
+      "id": "1hzf/MLSN",
+      "link": "https://github.com/1hzf/MLSN"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.24379v1.pdf",
+      "dataset_link": "https://github.com/1hzf/MLSN",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  },
+  {
+    "query": "I want a dataset on Kaggle for maithili, language, pipeline; link the dataset page (prefer \"kazanova/sentiment140\").",
+    "instruction": "Audience=Medical AI researchers; Keywords=['maithili', 'language', 'pipeline', 'content', 'sentiment-justification']; Format=JSON/Text; Language=English; Length<=90 words; Source=this JSON aggregation; Negative=Exclude HuggingFace",
+    "positives": [
+      "https://arxiv.org/pdf/2510.22160v1.pdf"
+    ],
+    "ground_truth": {
+      "host": "Kaggle",
+      "type": "dataset",
+      "name": "kazanova/sentiment140",
+      "id": "kazanova/sentiment140",
+      "link": "https://www.kaggle.com/datasets/kazanova/sentiment140"
+    },
+    "metadata": {
+      "paper_link": "https://arxiv.org/pdf/2510.22160v1.pdf",
+      "dataset_link": "https://www.kaggle.com/datasets/kazanova/sentiment140",
+      "domain": "medical",
+      "task": "ner",
+      "generated_at": "2025-11-03T14:15:54Z",
+      "source": "arxiv-datasets-aggregated"
+    }
+  }
+]

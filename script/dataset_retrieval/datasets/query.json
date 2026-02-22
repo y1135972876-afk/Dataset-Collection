@@ -1,0 +1,1343 @@
+[
+    {
+        "id": "Q1",
+        "query": "Identify the temporally grounded evaluation benchmark for language models that formalizes time-aware generalization and provides controlled tasks to test reasoning under temporal shifts and references.",
+        "instruction": "Given the query, select the single best-matching item from the catalog and output only its Paper Link. Match by temporal evaluation focus (time-aware generalization), LLMs, and controlled benchmark tasks.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2510.27544v1.pdf"],
+        "dataset_link": "https://github.com/nik-hz/tempobench",
+        "dataset_name": "TempoBench"
+        },
+        "meta": {
+        "domain": "Temporal evaluation for LLMs",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Temporally grounded evaluation",
+            "Time-aware generalization / temporal shifts",
+            "Controlled benchmark tasks for LLMs"
+        ]
+        }
+    },
+    {
+        "id": "Q2",
+        "query": "Find the large-scale Android security dataset that compiles over one million application samples and is released to support research on robust mobile defense and analysis.",
+        "instruction": "Return only the Paper Link of the single item whose description mentions a very large Android application corpus (≈1.3M apps) for security/robustness research.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2511.00342v1.pdf"],
+        "dataset_link": "https://github.com/DefenseDroid/DefenseDroid?tab=readme-ov-file",
+        "dataset_name": "DefenseDroid"
+        },
+        "meta": {
+        "domain": "Mobile security / Android",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Android application dataset",
+            "≈1.3 million apps",
+            "Security/robustness research focus"
+        ]
+        }
+    },
+    {
+        "id": "Q3",
+        "query": "Locate the cross-lingual medical retrieval benchmark designed for robust factuality in healthcare settings, evaluating multilingual retrieval across evolving clinical contexts.",
+        "instruction": "From the catalog, return only the Paper Link of the benchmark whose description emphasizes cross-lingual medical retrieval and factual accuracy in dynamic healthcare contexts.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2511.00421v1.pdf"],
+        "dataset_link": "",
+        "dataset_name": "MEDRECT"
+        },
+        "meta": {
+        "domain": "Medical IR / cross-lingual",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Cross-lingual medical retrieval",
+            "Emphasis on factual accuracy",
+            "Evaluation under evolving clinical contexts"
+        ]
+        }
+    },
+    {
+        "id": "Q4",
+        "query": "Which open recommendation benchmark consolidates tasks, datasets, and metrics under a single site to standardize evaluation for recommender systems?",
+        "instruction": "Output only the Paper Link for the item that introduces an open recommendation benchmark/site unifying tasks, datasets, and evaluation for recommender systems.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2510.26095v1.pdf"],
+        "dataset_link": "https://www.open-reco-bench.ai",
+        "dataset_name": "Open Recommendation Benchmark"
+        },
+        "meta": {
+        "domain": "Recommender systems",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Open benchmark/site",
+            "Unifies tasks and metrics",
+            "Standardized recsys evaluation"
+        ]
+        }
+    },
+    {
+        "id": "Q5",
+        "query": "Identify the large-scale full-paper retrieval benchmark where both queries and candidates are entire scientific papers, intended to test document-level retrieval beyond abstracts or passages.",
+        "instruction": "Return only the Paper Link for the benchmark that evaluates full-paper retrieval (queries and candidates are full papers).",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2507.10057v2.pdf"],
+        "dataset_link": "https://github.com/psw0021/",
+        "dataset_name": "SCIFULLBENCH"
+        },
+        "meta": {
+        "domain": "Scientific IR / full-paper retrieval",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Full-paper retrieval setting",
+            "Queries and candidates are full papers",
+            "Large-scale evaluation"
+        ]
+        }
+    },
+    {
+        "id": "Q6",
+        "query": "Find the benchmark that evaluates the effectiveness of interactive feedback for improving multimodal reasoning, using suites like MMMU-Pro and MathVerse for cross-domain testing.",
+        "instruction": "Select the single best-matching item and return only its Paper Link. Look for a benchmark explicitly called InterFeedback-Bench evaluating interactive feedback with MMMU-Pro/MathVerse.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2502.15027v3.pdf"],
+        "dataset_link": "https://openai.com/o1/",
+        "dataset_name": "InterFeedback-Bench"
+        },
+        "meta": {
+        "domain": "Multimodal reasoning / interactive feedback",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Interactive feedback evaluation",
+            "Uses MMMU-Pro and MathVerse",
+            "Cross-domain reasoning benchmark"
+        ]
+        }
+    },
+    {
+        "id": "Q7",
+        "query": "Which benchmark suite provides an agentic merit index for LLM-based agents, with datasets and tasks released publicly to measure agentic capabilities?",
+        "instruction": "From the catalog, output only the Paper Link of the item describing the Kamiwaza Agentic Merit Index and its released datasets.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2511.08042v1.pdf"],
+        "dataset_link": "https://docs.kamiwaza.ai/research/datasets",
+        "dataset_name": "Kamiwaza Agentic Merit Index (KAMI)"
+        },
+        "meta": {
+        "domain": "Agentic LLMs / evaluation",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Agentic merit index for LLM agents",
+            "Public datasets/tasks released",
+            "Capability-oriented evaluation"
+        ]
+        }
+    },
+    {
+        "id": "Q8",
+        "query": "Locate the dataset suite used to analyze when synthetic training data helps or hurts, released to study the impact of synthetic data generation on downstream model performance.",
+        "instruction": "Return only the Paper Link of the item whose description names MisSynth and focuses on synthetic data effects.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2510.26345v1.pdf"],
+        "dataset_link": "https://github.com/mxpoliakov/MisSynth",
+        "dataset_name": "MisSynth"
+        },
+        "meta": {
+        "domain": "Data quality / synthetic data",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Synthetic data generation study",
+            "Analyzes help vs harm scenarios",
+            "Released datasets for evaluation"
+        ]
+        }
+    },
+    {
+        "id": "Q9",
+        "query": "Find the dataset released for sketch-to-layout modeling that collects human sketches and paired layouts to train and evaluate models mapping sketches to structured layouts.",
+        "instruction": "Return only the Paper Link for the item with a dataset and code released under the 'sketch_to_layout' repository.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2510.27632v1.pdf"],
+        "dataset_link": "https://github.com/google-deepmind/sketch_to_layout",
+        "dataset_name": "Sketch-to-Layout dataset"
+        },
+        "meta": {
+        "domain": "Vision / UI/graphics / structured generation",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Human sketches paired with layouts",
+            "Training and evaluation for sketch-to-layout",
+            "Released code and data"
+        ]
+        }
+    },
+    {
+        "id": "Q10",
+        "query": "Identify the dataset that releases interleaved reasoning traces and corresponding video frames to support temporal search and reasoning evaluation.",
+        "instruction": "From the catalog, pick the single best-matching item and output only its Paper Link. Match by the name TimeSearch-R and interleaved reasoning/video supervision.",
+        "ground_truth": {
+        "positives": ["https://arxiv.org/pdf/2511.05489v1.pdf"],
+        "dataset_link": "https://github.com/Time-Search/TimeSearch-R",
+        "dataset_name": "TimeSearch-R"
+        },
+        "meta": {
+        "domain": "Temporal reasoning / multimodal",
+        "match_field": "Paper Link",
+        "conditions": [
+            "Interleaved reasoning traces + video frames",
+            "Temporal search/reasoning evaluation",
+            "Public release of code/data"
+        ]
+        }
+    },
+    {
+    "id": "Q11",
+    "query": "Find the dataset that provides a unified legal corpus where both statute retrieval and prior-case retrieval are evaluated together in the context of Indian law, using human annotations to indicate all relevant statutes and precedents for each query.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a legal corpus from the Indian jurisdiction; (2) it supports both statute retrieval and prior-case (precedent) retrieval in the same benchmark; (3) the corpus is designed so that models can exploit dependencies between statutes and cases; (4) it includes human annotations, where legal experts or law students mark relevant statutes and precedents for each query.",
+    "ground_truth": {
+      "dataset_name": "IL-PCSR (Indian Legal corpus for Prior Case and Statute Retrieval)",
+      "positives": ["https://arxiv.org/pdf/2511.00268v1.pdf"],
+      "dataset_link": "https://huggingface.co/datasets/Exploration-Lab/IL-PCSR"
+    },
+    "conditions": [
+      "Indian legal domain",
+      "Joint benchmark for statute retrieval and precedent retrieval",
+      "Parallel corpus that captures interdependence between statutes and prior cases",
+      "Human-annotated relevance labels from legal experts or students"
+    ],
+    "domain": "Legal information retrieval (Indian law)",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q12",
+    "query": "Identify the benchmark that focuses on question answering over highly structured and complex tables, combining roughly two thousand real-world hierarchical tables with several thousand synthetic ones, and offering tens of thousands of expert-crafted QA pairs across many semantic domains.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a QA benchmark centered on hierarchical or complex tables (HCTs); (2) it contains around 1.8–2k real-world tables plus several thousand synthetic tables; (3) it provides both real and synthetic QA pairs amounting to tens of thousands of question–answer triplets; (4) tables are available as images and as machine-readable formats such as CSV or similar; (5) it is explicitly positioned as a benchmark for answering natural language queries over HCTs.",
+    "ground_truth": {
+      "dataset_name": "HCT-QA",
+      "positives": ["https://arxiv.org/pdf/2504.20047v2.pdf"],
+      "dataset_link": "https://huggingface.co/datasets/qcri-ai/HCTQA"
+    },
+    "conditions": [
+      "Hierarchical / highly structured table focus",
+      "Mix of real-world and synthetic tables",
+      "Large number of QA pairs (≈10k real, ≈67k synthetic)",
+      "Tables available both as images and structured files",
+      "Explicit benchmark for NL question answering over tables"
+    ],
+    "domain": "Tabular QA (hierarchical / human-centric tables)",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q13",
+    "query": "Find the video–text benchmark that is explicitly designed for long-form video retrieval rather than short clips, supports clip-level retrieval inside continuous long videos, and relies on a scalable caption-generation pipeline combining vision–language models with both automatic and human validation.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it targets long video–text retrieval, not just short independent clips; (2) videos are long and continuous, but the benchmark also supports clip-level retrieval within them; (3) captions are generated through a multi-stage pipeline involving a strong vision–language model plus additional validation; (4) the dataset is positioned as a large-scale benchmark to study the challenges of long-form video retrieval.",
+    "ground_truth": {
+      "dataset_name": "LoVR (Long Video Retrieval benchmark)",
+      "positives": ["https://arxiv.org/pdf/2505.13928v2.pdf"],
+      "dataset_link": "https://github.com/TechNomad-ds/LoVR-benchmark"
+    },
+    "conditions": [
+      "Long-form videos instead of only short clips",
+      "Clip-level retrieval within long videos",
+      "Caption pipeline using VLM + validation",
+      "Benchmark for long video–text retrieval"
+    ],
+    "domain": "Multimodal video–text retrieval (long videos)",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q14",
+    "query": "Locate the open-domain financial QA benchmark that builds on over one hundred thousand SEC filings such as 10-K, 10-Q, and 8-K, and transforms existing closed-book financial QA questions into an open-domain setting with roughly one to two thousand question–answer pairs.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a financial question answering benchmark in an open-domain setting; (2) its retrieval corpus is a large collection of SEC filings including 10-K, 10-Q and 8-K documents; (3) the questions are adapted from prior financial QA datasets into an open-domain format; (4) it contains on the order of 1.5–1.6k QA pairs; (5) it is explicitly intended to evaluate retrieval and QA over a large volume of financial documents.",
+    "ground_truth": {
+      "dataset_name": "LOFin (Large-scale Open-domain Financial QA benchmark)",
+      "positives": ["https://arxiv.org/pdf/2505.20368v3.pdf"],
+      "dataset_link": "https://github.com/deep-over/LOFin-bench-HiREC"
+    },
+    "conditions": [
+      "Financial QA domain",
+      "Large SEC filing corpus (≈145k documents)",
+      "Questions converted from closed-book to open-domain",
+      "≈1.5–1.6k QA pairs",
+      "Emphasis on retrieval over many financial documents"
+    ],
+    "domain": "Financial open-domain QA over SEC filings",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q15",
+    "query": "Find the tabular reasoning benchmark that uses a few thousand real-world science and sports tables, together with nearly eight thousand carefully constructed question–answer pairs, to jointly stress-test language models along axes such as table length, domain specificity, semi-structured information, and multi-hop reasoning.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a benchmark for reasoning over real-world tables; (2) the tables come primarily from two domains, one scientific (e.g., grant records) and one sports-related (e.g., NBA statistics); (3) it includes approximately 2,000–2,100 tables and around 8,000 QA pairs; (4) the benchmark is explicitly designed to evaluate models along multiple orthogonal challenges such as table scale, heterogeneity, domain specificity, and multi-hop inference.",
+    "ground_truth": {
+      "dataset_name": "RUST-BENCH",
+      "positives": ["https://arxiv.org/pdf/2511.04491v1.pdf"],
+      "dataset_link": "https://github.com/tabular-reasoning/RUST-BENCH"
+    },
+    "conditions": [
+      "Real-world tables from science and sports domains",
+      "≈2,031 tables and ≈7,966 QA pairs",
+      "Focus on multi-hop and complex tabular reasoning",
+      "Explicit four-axis evaluation: scale, heterogeneity, domain, reasoning complexity"
+    ],
+    "domain": "Tabular reasoning (semi-structured tables)",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q16",
+    "query": "Identify the benchmark that evaluates information retrieval in Korean banking by generating queries that compare multiple real bank products in the same category, using over two hundred official product-disclosure documents to create more than eight hundred realistic multi-document queries.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is an information retrieval benchmark in the banking/financial domain; (2) documents are official Korean bank product disclosures such as terms, conditions, and product descriptions; (3) its queries are constructed by contrasting passages from several products within the same category, reflecting how customers compare different options; (4) it contains around 200+ source documents and ≈800+ queries.",
+    "ground_truth": {
+      "dataset_name": "KoBankIR",
+      "positives": ["https://arxiv.org/pdf/2511.05000v1.pdf"],
+      "dataset_link": null
+    },
+    "conditions": [
+      "Korean banking / financial products domain",
+      "Official bank product-disclosure documents as corpus",
+      "Queries compare or contrast multiple products within a category",
+      "≈204 documents and ≈815 queries"
+    ],
+    "domain": "Banking information retrieval (Korean, product comparison)",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q17",
+    "query": "Find the suite of Russian information retrieval datasets whose queries are derived from interesting fact-style statements in the 'Did you know...' section of Russian Wikipedia, and whose relevance labels link those facts to their referenced articles at sentence level, supporting tasks like fact-checking and retrieval-augmented generation.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is built from the Russian Wikipedia 'Did you know...' section; (2) queries are formulated as assertions or facts, suitable for fact-checking; (3) relevance annotations connect these facts to referenced Wikipedia articles at sentence-level with graded relevance; (4) the dataset suite is intended to support multiple retrieval tasks, including fact-checking, retrieval-augmented generation, and full-document retrieval; (5) all datasets are publicly released on HuggingFace.",
+    "ground_truth": {
+      "dataset_name": "FRIDA / wikifacts-based Russian IR datasets",
+      "positives": ["https://arxiv.org/pdf/2511.05079v1.pdf"],
+      "dataset_link": "https://huggingface.co/ai-forever/FRIDA"
+    },
+    "conditions": [
+      "Russian language information retrieval",
+      "\"Did you know...\" section of Russian Wikipedia as source",
+      "Fact-like queries and sentence-level graded relevance",
+      "Supports fact-checking, RAG, and full-document retrieval"
+    ],
+    "domain": "Russian IR (Wikipedia facts, fact-checking, RAG)",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q18",
+    "query": "Locate the benchmark for data-analysis agents that is derived from real industry business-analysis reports, covers around one hundred datasets across five business scenarios, and mixes relational databases, CSVs, and NoSQL data to test how well agents can explore heterogeneous data sources and surface useful insights.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a benchmark specifically targeting data analytics or data science agents, rather than classic QA only; (2) datasets originate from realistic enterprise or industry analysis reports, with privacy-sensitive content removed; (3) it covers approximately 100 datasets across several (around five) business-analysis scenarios; (4) input data formats are heterogeneous and include relational databases, CSV files, and NoSQL data; (5) tasks ask agents to explore data, extract insights, and produce summaries or recommendations.",
+    "ground_truth": {
+      "dataset_name": "UniDataBench",
+      "positives": ["https://arxiv.org/pdf/2511.01625v1.pdf"],
+      "dataset_link": null
+    },
+    "conditions": [
+      "Benchmark for data-analytics / data-agent evaluation",
+      "Real-life business analysis scenarios as source",
+      "≈100 datasets across ≈5 scenarios",
+      "Mix of relational, CSV, and NoSQL formats",
+      "Tasks focused on insight discovery and recommendations"
+    ],
+    "domain": "Data analytics agents / business intelligence",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q19",
+    "query": "Find the synthesized video-retrieval training dataset that is produced by a multi-stage workflow designed to fill semantic and structural gaps revealed by a universal video-retrieval benchmark, and that ultimately yields more than one and a half million text–video retrieval pairs with rich spatial–temporal information and diverse task formats.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a synthesized training dataset for universal video retrieval; (2) it is built by a multi-stage synthesis pipeline (e.g., V-SynFlow) that filters noisy text–video pairs and enriches them with additional annotations; (3) the resulting corpus contains over 1.5 million video–text retrieval pairs; (4) it is explicitly associated with, and informed by, a universal video retrieval benchmark intended to cover many different abilities; (5) it offers multiple retrieval task formats and rich spatial–temporal details.",
+    "ground_truth": {
+      "dataset_name": "Universal Video Retrieval Dataset (UVRD)",
+      "positives": ["https://arxiv.org/pdf/2510.27571v1.pdf"],
+      "dataset_link": "https://gzn00417.github.io/GVE/"
+    },
+    "conditions": [
+      "Synthesized video–text retrieval dataset",
+      "Constructed via a multi-stage data synthesis workflow",
+      "≈1.55M video-retrieval pairs",
+      "Closely tied to a Universal Video Retrieval Benchmark",
+      "Rich spatio-temporal detail and diverse task formats"
+    ],
+    "domain": "Universal video retrieval (training dataset)",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q20",
+    "query": "Identify the large-scale graph dataset that models the complete economic topology of Bitcoin as a temporal heterogeneous graph, spanning more than sixteen years of transaction history with over two billion nodes and nearly forty billion edges, and that also provides sampling tools and graph-database snapshots for downstream machine-learning tasks.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a machine-learning-friendly graph representation of the Bitcoin blockchain; (2) the graph is temporal and heterogeneous, capturing different node and edge types such as blocks, transactions, and script addresses; (3) it covers the full transaction history up to a specific block height (around 863,000), amounting to >2.4B nodes and >39B edges; (4) it is released together with tools for sampling subgraphs, producing feature vectors, and importing into specialized graph databases; (5) it is explicitly intended to support large-scale graph ML research and applications like anomaly detection or entity classification on Bitcoin.",
+    "ground_truth": {
+      "dataset_name": "Bitcoin Economic Topology Graph (EBA graph dataset)",
+      "positives": ["https://arxiv.org/pdf/2510.20028v1.pdf"],
+      "dataset_link": "https://github.com/B1AAB/EBA"
+    },
+    "conditions": [
+      "Bitcoin blockchain as domain",
+      "Temporal heterogeneous graph structure",
+      ">2.4B nodes and >39.7B edges up to block ~863,000",
+      "Released with graph-database snapshots and sampling utilities",
+      "Designed for large-scale graph ML and economic analysis"
+    ],
+    "domain": "Blockchain graph ML (Bitcoin economic topology)",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "Q21",
+    "domain": "Medical imaging, data augmentation, class-imbalanced OCT classification",
+    "query": "Identify the dataset that constructs composite retinal OCT images using a class-based image composition method on the OCTDL dataset to alleviate severe class imbalance across seven retinal disease classes and normal controls.",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is derived from a relatively small retinal OCT dataset (around two thousand images) with seven disease categories plus a normal class.\n2. It introduces a class-based input image composition method that combines multiple same-class OCT images into structured composite images laid out in a fixed grid (for example 3×1).\n3. The new composite dataset is explicitly created to mitigate class imbalance by generating more samples for minority classes while limiting reuse for majority classes.\n4. The composite dataset has its own specific name distinct from the original OCTDL corpus (for example, a name indicating composite OCTDL).\n5. The approach is positioned as a general augmentation strategy that can be extended to larger OCT datasets and potentially other medical imaging tasks.",
+    "ground_truth": {
+      "dataset_name": "3x1-Co-OCTDL (composite OCTDL dataset with CB-ImgComp augmentation)",
+      "positives": ["https://arxiv.org/pdf/2511.03891v2.pdf"],
+      "dataset_link": "https://www.kaggle.com/datasets/azdineh/c-dataset-2025"
+    },
+    "conditions": [
+      "Based on the public OCTDL retinal OCT dataset with seven disease classes and normal controls.",
+      "Uses a class-based input image composition (CB-ImgComp) method to build composite OCT images.",
+      "Explicitly targets severe class imbalance by expanding minority-class samples more than majority classes.",
+      "Composite images are arranged in a fixed grid layout (such as 3×1) and form a new dataset named 3x1-Co-OCTDL.",
+      "Proposed as a general strategy that can scale to larger OCT datasets and other medical imaging problems."
+    ]
+  },
+  {
+    "id": "Q22",
+    "domain": "Multi-modal databases, semantic query processing, benchmark construction",
+    "query": "Find the benchmark that builds scenario-specific databases by combining multiple Kaggle datasets and evaluates semantic query processing systems using cross-modal semantic joins over text, images, and audio in an extended relational model.",
+    "instruction": "Return the dataset or benchmark whose description satisfies ALL of the following:\n1. It is explicitly framed as a benchmark for semantic operators in query processing engines, not just a raw corpus.\n2. It uses an extended relational data model where individual table cells can store multi-modal content such as images and audio, not only plain text.\n3. It constructs several scenario-specific databases (for example, a wildlife monitoring scenario combining camera trap photos and animal sound recordings) from existing public datasets like those on Kaggle.\n4. Benchmark queries involve semantic joins and other semantic operators across modalities, rather than only standard SQL joins on symbolic keys.\n5. It aims to systematically evaluate semantic query processing engines by covering a wide range of semantic operators and real-world multi-modal tasks.",
+    "ground_truth": {
+      "dataset_name": "SemBench (semantic operator benchmark for query processing engines)",
+      "positives": ["https://arxiv.org/pdf/2511.01716v1.pdf"],
+      "dataset_link": "https://www.kaggle.com/datasets/andrezaza/clapper-massive-rotten-tomatoes-movies-and-reviews"
+    },
+    "conditions": [
+      "Benchmark, not just a single dataset, for semantic operators in query processing.",
+      "Uses an extended relational model allowing images and audio inside table cells.",
+      "Scenario-specific databases built by combining and relabeling public datasets such as Kaggle corpora.",
+      "Queries include semantic joins and other semantic operators over multi-modal attributes.",
+      "Designed to evaluate and compare semantic query processing engines on realistic tasks."
+    ]
+  },
+  {
+    "id": "Q23",
+    "domain": "Video understanding, multimodal ad summarization, temporal segmentation",
+    "query": "Locate the dataset that introduces an ad clipping task and contains just over two hundred video advertisements with tightly synchronized visual and audio streams to support multimodal ad summarization and temporal clipping research.",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It explicitly defines a new ad clipping or ad summarization task focused on commercials rather than general movies or user videos.\n2. The dataset comprises a bit more than two hundred video advertisements, each with both video frames and audio tracks aligned in time.\n3. It is presented as larger or at least comparable in scale to previous video summarization datasets for this specific ad-focused task.\n4. The videos cover real advertising content from multiple product categories or industries, not a synthetic or toy domain.\n5. The dataset is designed to support models that jointly leverage audio and visual cues for temporal segmentation and summarization within advertisements.",
+    "ground_truth": {
+      "dataset_name": "AdSum204 (multimodal ad clipping and summarization dataset)",
+      "positives": ["https://arxiv.org/pdf/2510.26569v1.pdf"],
+      "dataset_link": ""
+    },
+    "conditions": [
+      "Defines an ad clipping task specifically for video advertisements.",
+      "Includes 204 real-world ad videos with synchronized audio and visual information.",
+      "Dataset scale is positioned as larger or comparable to prior ad summarization datasets.",
+      "Covers multiple product categories and advertising scenarios.",
+      "Supports multimodal temporal segmentation and summarization models using both audio and video."
+    ]
+  },
+  {
+    "id": "Q24",
+    "domain": "Real-world QA, claim verification, structured retrieval with SQL supervision",
+    "query": "Find the benchmark that builds two sets of one hundred real-world tasks for claim verification and question answering, each paired with SQL-annotated evidence tables, based on news and governmental statistics sources.",
+    "instruction": "Return the benchmark whose description satisfies ALL of the following:\n1. It is called a benchmark and is named around the theme of drama or dramatic real-world events.\n2. It consists of two main task categories: claim verification and question answering, each with around one hundred instances drawn from real-world data.\n3. Claim verification tasks are based on sources such as fact-checking platforms or social media community notes, where each claim must be verified as true or false using structured data.\n4. Question answering tasks are based on official statistical resources such as governmental data portals, requiring numerical or factual answers.\n5. For every instance, the benchmark provides structured tables together with SQL annotations specifying how to retrieve and aggregate the evidence that supports the ground truth answer.",
+    "ground_truth": {
+      "dataset_name": "DramaBench (real-world claim verification and QA benchmark)",
+      "positives": ["https://arxiv.org/pdf/2510.27238v1.pdf"],
+      "dataset_link": "https://github.com/uiuc-kang-lab/drama"
+    },
+    "conditions": [
+      "Benchmark named around the concept of drama (DramaBench).",
+      "Contains around 100 claim verification and 100 QA instances.",
+      "Claims sourced from fact-checking or community note platforms for verification tasks.",
+      "QA items sourced from official statistics such as USAFacts or similar sources.",
+      "Each instance ships with structured tables and SQL queries as supervision for retrieval and reasoning."
+    ]
+  },
+  {
+    "id": "Q25",
+    "domain": "Speech synthesis evaluation, naturalness preference data, generative reward modeling",
+    "query": "Identify the speech evaluation suite that collects large-scale pairwise naturalness preferences between synthesized speech samples under controlled word error rate differences and provides both a training dataset and a held-out evaluation set, together with a generative reward model built on a multimodal LLM.",
+    "instruction": "Return the dataset suite whose description satisfies ALL of the following:\n1. It is centered on evaluating the naturalness of synthesized speech, with human annotators comparing pairs of speech outputs.\n2. The main dataset contains large-scale preference labels collected under constraints on word error rate differences so that annotators focus on naturalness instead of transcription correctness.\n3. A high-quality subset is constructed by filtering pairs where the difference in word error rate is below a fixed threshold (for example around twelve percentage points).\n4. It includes a dedicated held-out evaluation set, sampled from the high-quality subset, used to benchmark models on speech naturalness preference prediction.\n5. The work also trains a generative reward model for speech naturalness on top of a multimodal or audio-capable large model such as Qwen2.5-Omni, using supervised fine-tuning and reinforcement learning methods.",
+    "ground_truth": {
+      "dataset_name": "SpeechJudge-Data, SpeechJudge-Data(hq), and SpeechJudge-Eval",
+      "positives": ["https://arxiv.org/abs/2511.07931"],
+      "dataset_link": "https://speechjudge.github.io"
+    },
+    "conditions": [
+      "Focuses on human preference judgments of speech naturalness for synthesized audio.",
+      "Main dataset collects large-scale pairwise comparisons with word error rate control.",
+      "High-quality subset filtered by a small WER gap threshold.",
+      "Includes a separate held-out set for evaluation of preference prediction models.",
+      "Provides a generative reward model, SpeechJudge-GRM, trained on top of a multimodal LLM (e.g., Qwen2.5-Omni)."
+    ]
+  },
+  {
+    "id": "Q26",
+    "domain": "Logical reasoning, graph connectivity, natural language proof planning",
+    "query": "Which dataset is a synthetic deep reasoning benchmark that generates many logic programs and associated instances to test graph connectivity prediction and natural language proof planning with varying depths of reasoning required?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is explicitly named as a deep reasoning dataset and often abbreviated with the letters D and R.\n2. Instances are generated synthetically from randomly sampled logical stories or programs, with entailed atoms serving as targets.\n3. One task focuses on reasoning over graph connectivity or relational structure, while another task concerns natural language proof planning or stepwise argument construction.\n4. The dataset is designed so that the difficulty can vary widely, including very long reasoning chains that require many inference steps.\n5. The generative process allows the creation of a very large number of instances, supporting extensive training and evaluation of reasoning models.",
+    "ground_truth": {
+      "dataset_name": "DeepRD (Deep Reasoning Dataset)",
+      "positives": ["https://arxiv.org/pdf/2511.05511v1.pdf"],
+      "dataset_link": "https://huggingface.co/datasets/axd353/DeepRD"
+    },
+    "conditions": [
+      "Synthetic deep reasoning dataset named DeepRD.",
+      "Instances derived from logic programs with entailed atoms as targets.",
+      "Covers tasks such as graph connectivity and natural language proof planning.",
+      "Reasoning depth varies greatly, with some instances requiring long chains of inferences.",
+      "Dataset generation process allows scaling to a very large number of examples."
+    ]
+  },
+  {
+    "id": "Q27",
+    "domain": "Open-ended research tasks, rubric-based evaluation, long-form answer assessment",
+    "query": "Find the benchmark that contains just over one hundred single-turn research prompts, each paired with dozens of human-written rubric criteria, and is intended for fine-grained evaluation of long-form research answers across diverse domains.",
+    "instruction": "Return the dataset or benchmark whose description satisfies ALL of the following:\n1. It is framed as a collection of open-ended research tasks and is named around research rubrics or rubric-based evaluation.\n2. It includes slightly more than one hundred single-turn prompts spanning diverse research-related domains (for example, science, social science, policy, and engineering).\n3. Each prompt is accompanied by a rubric made of around twenty to forty criteria that specify what a high-quality answer should contain.\n4. The rubrics are written and reviewed by multiple human experts to ensure clarity and reliability and often distinguish between core and optional criteria.\n5. The benchmark is intended to evaluate, and potentially train, models to produce high-quality long-form research answers, using the rubric criteria as fine-grained supervision.",
+    "ground_truth": {
+      "dataset_name": "RESEARCHRUBRICS (rubric-based research task benchmark)",
+      "positives": ["https://arxiv.org/pdf/2511.07685v1.pdf"],
+      "dataset_link": ""
+    },
+    "conditions": [
+      "Benchmark is explicitly about research rubrics (RESEARCHRUBRICS).",
+      "Contains 101 single-turn prompts across diverse research domains.",
+      "Each prompt has 20–43 rubric criteria describing ideal answers.",
+      "Rubrics are human-authored and reviewed by multiple experts.",
+      "Designed for evaluating and improving long-form research-style responses."
+    ]
+  },
+  {
+    "id": "Q28",
+    "domain": "Opinion summarization, user reviews, expert comparison, noisy long-form text",
+    "query": "Identify the dataset that targets user-centric opinion summarization by collecting thousands of long-form user reviews per entity, pairing them with expert-written reviews and manually annotated queries, to study summarization under noisy, repetitive, and diverse input.",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is explicitly introduced as a large-scale, high-quality dataset for opinion summarization from user reviews.\n2. Each entity in the dataset (for example, a hotel or product) is associated with over one thousand long-form user reviews.\n3. For each entity, there are also expert-written, relatively unbiased reviews that serve as a reference or target for summarization quality.\n4. The dataset includes manually crafted queries or aspect prompts that define what information should be extracted or summarized.\n5. It is motivated by the challenges of noisy, repetitive, and highly diverse user review text, and evaluates systems on how well they can provide concise, user-centric summaries aligned with the expert perspective.",
+    "ground_truth": {
+      "dataset_name": "OpinioBank (user-centric opinion summarization dataset)",
+      "positives": ["https://arxiv.org/pdf/2510.22957v1.pdf"],
+      "dataset_link": "https://github.com/zhongxiaogit/OpinioBank"
+    },
+    "conditions": [
+      "Dataset focuses on opinion summarization from large numbers of user reviews.",
+      "Each entity has more than one thousand long-form user reviews.",
+      "Pairs user reviews with unbiased expert reviews as references.",
+      "Includes manually annotated queries or aspects to guide summarization.",
+      "Designed to handle noisy, repetitive, and diverse review text in a user-centric way."
+    ]
+  },
+  {
+    "id": "Q29",
+    "domain": "Online video understanding, streaming QA, temporal reasoning",
+    "query": "Which dataset is built for online video understanding and provides supervision in the form of multi-turn streaming question answering chains and frame-level streaming questions over real-world videos spanning around fifteen scenarios and several evaluation tasks?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is explicitly introduced as a comprehensive dataset for online or streaming video understanding, not just offline clip classification.\n2. The dataset covers roughly fifteen diverse real-world scenarios, such as sports, daily life, and other activities.\n3. It defines multiple evaluation tasks (around five) that involve streaming question answering, where questions and answers evolve as the video progresses.\n4. Supervision includes multi-turn streaming QA chains and frame-level streaming QA, where the same query can have time-varying answers depending on the video segment.\n5. The dataset is used together with or to benchmark models that process video in an online manner, such as an OmniStar-style model for streaming video QA.",
+    "ground_truth": {
+      "dataset_name": "OmniStar (online video understanding dataset)",
+      "positives": ["https://arxiv.org/pdf/2510.23178v1.pdf"],
+      "dataset_link": "https://huggingface.co/datasets/InternLM/OmniStar"
+    },
+    "conditions": [
+      "Designed for online or streaming video understanding rather than offline clips.",
+      "Covers 15 diverse real-world video scenarios.",
+      "Defines 5 evaluation tasks centered on streaming QA.",
+      "Includes multi-turn streaming QA chains and frame-level streaming QA supervision.",
+      "Serves as the main dataset for evaluating online video QA models such as LiveStar or similar architectures."
+    ]
+  },
+  {
+    "id": "Q30",
+    "domain": "Information retrieval, Russian Wikipedia, fact-checking and RAG",
+    "query": "Find the Russian information retrieval dataset series that is built from the 'Did you know' section of Russian Wikipedia, where interesting facts become queries and their referenced articles are sentence-level annotated with graded relevance for tasks like fact-checking and retrieval-augmented generation.",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a series of information retrieval datasets specifically targeting the Russian language.\n2. The data are constructed from the 'Did you know' or 'interesting facts' section of Russian Wikipedia, turning those facts into queries.\n3. For each query, one or more referenced Wikipedia articles are included as documents, with sentence-level relevance annotations using graded relevance labels.\n4. The dataset supports tasks such as fact-checking, retrieval-augmented generation, and full-document retrieval, and is used to study how document length affects retrieval quality.\n5. It introduces or includes a subset called something like wikifacts-sents and is released on a public platform such as HuggingFace together with code on GitHub.",
+    "ground_truth": {
+      "dataset_name": "FRIDA / wikifacts-sents (Russian IR datasets from 'Did you know' facts)",
+      "positives": ["https://arxiv.org/pdf/2511.05079v1.pdf"],
+      "dataset_link": "https://huggingface.co/ai-forever/FRIDA"
+    },
+    "conditions": [
+      "Russian-language IR datasets derived from the 'Did you know' section of Russian Wikipedia.",
+      "Interesting facts become queries and referenced articles serve as documents.",
+      "Sentence-level graded relevance annotations for fact-checking and retrieval tasks.",
+      "Supports fact-checking, retrieval-augmented generation, and full-document retrieval experiments.",
+      "Includes a subset called wikifacts-sents and is released on HuggingFace with accompanying code on GitHub."
+    ]
+  },
+  {
+    "id": "Q31",
+    "query": "I'm building an embodied question answering (EQA) agent and need a benchmark dataset: it should be constructed on HM3D 3D indoor scenes, contain around 18K questions, provide multi-step tool calls and reasoning trajectories for each sample, and distinguish between seen and unseen scenes to evaluate the agent's planning and tool-use abilities. Which dataset should I use?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is an embodied question answering (EQA) benchmark built on HM3D 3D indoor scenes.\n2. It contains roughly 18K embodied QA samples.\n3. Each sample includes multi-step reasoning and tool-calling trajectories.\n4. The data are split into seen and unseen scenes to evaluate generalization.\n5. It is intended for training and evaluating embodied QA agents with planning and tool-use capabilities.",
+    "ground_truth": {
+      "dataset_name": "EQA-RT",
+      "positives": ["https://arxiv.org/pdf/2510.20310v2.pdf"],
+      "dataset_link": "https://tooleqa.github.io",
+      "relevance_rationale": "EQA-RT is an embodied QA dataset built on HM3D scenes, containing about 18K EQA question–answer pairs and providing full reasoning trajectories and tool-usage processes for each sample. It also splits data into seen and unseen scenes, perfectly matching the query’s constraints on scene source, scale, and reasoning traces."
+    },
+    "meta": {
+      "domain": "embodied AI / EQA",
+      "query_type": "multi-condition dataset retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Realistic 3D indoor scenes based on HM3D",
+        "Around 18K embodied QA samples",
+        "Each sample has multi-step reasoning and tool-calling trajectories",
+        "Seen / unseen scene split for generalization evaluation",
+        "Used for training and evaluating embodied QA agents"
+      ]
+    }
+  },
+  {
+    "id": "Q32",
+    "query": "I want to evaluate the security of mobile multi-app agents when they face environment-injection attacks such as overlay attacks and phishing SMS in a real Android emulator. Is there a benchmark specifically designed for such environment-injection threats that covers multiple usage scenarios like communication, finance, social networking, and web browsing, and injects adversarial events into an executable environment?",
+    "instruction": "Return the benchmark whose description satisfies ALL of the following:\n1. It evaluates the security of mobile agents under environment-injection attacks such as overlays and malicious SMS.\n2. It is built on a real, executable Android emulator environment.\n3. It injects adversarial events into system and third-party apps across multiple scenarios (e.g., communication, finance, social, web browsing).\n4. It is explicitly designed as a benchmark for environment-injection threats against mobile agents.\n5. It covers many apps and domains rather than a single application.",
+    "ground_truth": {
+      "dataset_name": "GhostEI-Bench",
+      "positives": ["https://arxiv.org/pdf/2510.20333v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "GhostEI-Bench is the first benchmark specifically targeting environment-injection attacks on mobile agents. It injects overlay attacks, malicious SMS, and other events into a full Android emulator across 14 system and third-party apps, covering seven typical domains including communication, finance, social networking, and web navigation, which aligns very closely with the query's requirements on dynamic executable environments, multi-app coverage, multi-scenario settings, and environment-injection attacks."
+    },
+    "meta": {
+      "domain": "AI safety / mobile agents",
+      "query_type": "benchmark retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Evaluates the security of mobile agents",
+        "Environment-injection attacks (overlay, malicious SMS, etc.)",
+        "Executable environment based on a real Android emulator",
+        "Covers multiple application scenarios (communication, finance, social, web, etc.)",
+        "Benchmark specifically focused on environment injection"
+      ]
+    }
+  },
+  {
+    "id": "Q33",
+    "query": "I'm working on table-content-aware text-to-SQL retrieval and would like a benchmark dataset: it should be built from real business tables, contain a bit more than two thousand natural-language questions paired with corresponding SQL queries, and be used to evaluate the ability to generate correct SQL after understanding the table content. Is there an existing dataset I can use?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a benchmark for natural language to SQL (text-to-SQL) tasks.\n2. It is built on real business tables.\n3. It contains around 2,000 question–SQL pairs.\n4. It explicitly focuses on table-content-aware SQL generation rather than only schema-based parsing.\n5. It is intended for use as a benchmark dataset for evaluating table-content-aware text-to-SQL models.",
+    "ground_truth": {
+      "dataset_name": "TCD",
+      "positives": ["https://arxiv.org/pdf/2407.01183v3.pdf"],
+      "dataset_link": "https://huggingface.co/DMetaSoul/Dmeta-embedding",
+      "relevance_rationale": "TCD is a table-content-aware benchmark dataset with 2,115 question–SQL pairs for evaluating models' ability to generate SQL based on understanding table content. Both its scale and task setup are highly consistent with the query description."
+    },
+    "meta": {
+      "domain": "text-to-SQL / tabular reasoning",
+      "query_type": "dataset retrieval",
+      "difficulty": "medium",
+      "conditions": [
+        "Natural language to SQL task",
+        "Around 2,000 question–SQL pairs",
+        "Focus on table-content awareness (table-content-aware)",
+        "Grounded in real business tables",
+        "Suitable as a benchmark evaluation dataset"
+      ]
+    }
+  },
+  {
+    "id": "Q34",
+    "query": "I need a Wikidata-based knowledge graph QA benchmark to test zero-shot generalization of KG retrievers: each question should be paired with a complete answer subgraph rather than just a simple path, covering dozens of different graph structures and relation types, and the dataset should contain around thirty thousand questions. What is the name of this dataset?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a KGQA dataset built on Wikidata.\n2. It contains roughly 30K questions.\n3. For each question, it provides a full answer subgraph in the knowledge graph, not just a shortest path.\n4. It covers many different graph structures and relation types.\n5. It is specifically designed to evaluate zero-shot generalization of KG retrievers to unseen graph structures and relations.",
+    "ground_truth": {
+      "dataset_name": "GTSQA",
+      "positives": ["https://arxiv.org/pdf/2511.04473v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "GTSQA is a knowledge graph QA dataset built on Wikidata under the SynthKGQA framework, containing 32,099 questions and providing a complete ground-truth answer subgraph for each question. It is specifically designed to evaluate zero-shot retrieval generalization across different graph structures and relation types, which perfectly matches the query conditions."
+    },
+    "meta": {
+      "domain": "knowledge graph QA",
+      "query_type": "dataset retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "KGQA dataset based on Wikidata",
+        "Around 30K questions",
+        "Explicitly provides answer subgraphs rather than shortest paths",
+        "Covers many graph structures and relation types",
+        "Benchmark emphasizing zero-shot generalization"
+      ]
+    }
+  },
+  {
+    "id": "Q35",
+    "query": "I'm training a general video retrieval model and want a unified large-scale video retrieval dataset: it should be constructed via a multi-stage synthesis pipeline that filters from massive low-quality text–video pairs, contain about 1.55 million video retrieval samples, support multiple retrieval task formats, and have rich spatio-temporal details. It should also be designed to work together with the UVRB benchmark for evaluating universal video retrieval performance. What is this dataset called?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a unified large-scale video retrieval dataset.\n2. It is built via a multi-stage synthesis or filtering pipeline from massive low-quality text–video pairs.\n3. It contains on the order of 1.5M+ video retrieval samples.\n4. It supports multiple retrieval task formats and provides rich spatio-temporal information.\n5. It is explicitly designed to be used together with a Universal Video Retrieval Benchmark (UVRB) to evaluate general video retrieval performance.",
+    "ground_truth": {
+      "dataset_name": "Universal Video Retrieval Dataset (UVRD)",
+      "positives": ["https://arxiv.org/pdf/2510.27571v1.pdf"],
+      "dataset_link": "https://gzn00417.github.io",
+      "relevance_rationale": "UVRD is a universal video retrieval dataset constructed using the V-SynFlow synthesis pipeline, containing over 1.55M video retrieval samples, covering multiple retrieval task formats, and explicitly designed to be used with the UVRB benchmark for universal video retrieval evaluation, fully matching the specified scale, purpose, and multi-task setting in the query."
+    },
+    "meta": {
+      "domain": "video retrieval",
+      "query_type": "dataset retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Unified large-scale video retrieval dataset",
+        "About 1.55M text–video retrieval pairs",
+        "Multiple retrieval task formats",
+        "Rich spatio-temporal details and diverse descriptions",
+        "Designed to be used with UVRB for universal video retrieval evaluation"
+      ]
+    }
+  },
+  {
+    "id": "Q36",
+    "query": "I'm studying blockchain graph learning and want a complete Bitcoin heterogeneous temporal graph dataset that covers from the genesis block to block 863,000: it should have billions of nodes and edges, explicitly model multiple node types such as addresses, transactions, and blocks, and provide subgraph sampling tools and Neo4j snapshots to facilitate anomaly detection and large-scale graph representation learning. Is there such a public dataset?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a heterogeneous temporal graph dataset for the Bitcoin blockchain.\n2. It covers the full history up to around block 863,000.\n3. It contains billions of nodes and edges.\n4. It explicitly models multiple node types such as blocks, transactions, and addresses.\n5. It provides tools for subgraph sampling and graph-database (e.g., Neo4j) snapshots to support anomaly detection and large-scale graph representation learning.",
+    "ground_truth": {
+      "dataset_name": "EBA (Bitcoin economic topology graph)",
+      "positives": ["https://arxiv.org/pdf/2510.20028v1.pdf"],
+      "dataset_link": "https://github.com/B1AAB/EBA",
+      "relevance_rationale": "EBA provides a Bitcoin economic topology heterogeneous temporal graph covering up to block 863,000, with over 2.4B nodes and 39.72B edges, along with community-sampled subgraphs and Neo4j snapshots for anomaly detection, address classification, and large-scale graph ML benchmarks, fully satisfying the scale, content, and tooling requirements described in the query."
+    },
+    "meta": {
+      "domain": "graph ML / blockchain",
+      "query_type": "dataset retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Full-history heterogeneous temporal graph of Bitcoin",
+        "Node/edge scale in the multi-billion range",
+        "Explicitly models multiple node types (transactions, addresses, blocks, etc.)",
+        "Provides subgraph sampling tools and graph database snapshots",
+        "Suitable for anomaly detection and large-scale graph learning benchmarks"
+      ]
+    }
+  },
+  {
+    "id": "Q37",
+    "query": "I need a multimodal dataset for music emotion recognition and analysis: it should contain about 100 songs improvised by 20 young adults, and for each song provide lyrics text, a MIDI file of the melody, and a WAV audio file with accompaniment. Emotions should be annotated in the arousal and valence dimensions of Russell’s circumplex model, specifying which quadrant each song falls into. What is this dataset called?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is an open dataset of improvised songs with emotion annotations, intended for music emotion recognition.\n2. It contains around 100 songs recorded by approximately 20 young adult participants.\n3. For each song, it provides lyrics text, a MIDI file of the melody, and a WAV audio file (with accompaniment).\n4. Emotions are annotated using Russell’s circumplex model with arousal and valence values, grouped into four quadrants.\n5. It is designed for research on music emotion recognition and the relationship between musical content and affect.",
+    "ground_truth": {
+      "dataset_name": "Emo100DB",
+      "positives": ["https://arxiv.org/pdf/2511.04755v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "Emo100DB consists of about 100 improvised songs recorded by 20 young adults, providing lyrics, melody MIDI, and WAV audio with accompaniment for each song, and annotating emotions in four quadrants based on Russell’s circumplex model. It is designed for music emotion recognition and exactly matches the requirements in the query."
+    },
+    "meta": {
+      "domain": "music emotion recognition",
+      "query_type": "dataset retrieval",
+      "difficulty": "medium",
+      "conditions": [
+        "Around 100 improvised songs",
+        "Includes three modalities: lyrics, MIDI, and WAV audio",
+        "Performed and recorded by young adults",
+        "Emotion labels based on Russell’s circumplex model",
+        "Suitable for music emotion recognition and analysis"
+      ]
+    }
+  },
+  {
+    "id": "Q38",
+    "query": "I'm working on LLM-as-a-judge research and want a benchmark specifically for evaluating the consistency and scalability of different large models when scoring complementary product recommendations: it should adopt a multi-agent pipeline to perform pattern audits and issue labeling on product pairs, aggregate labels into ground-truth via majority vote, and cover dozens of models such as GPT, Gemini, Claude, and Llama. What is this evaluation benchmark called?",
+    "instruction": "Return the benchmark whose description satisfies ALL of the following:\n1. It is a large-scale LLM-as-a-judge benchmark for complementary product recommendation evaluation.\n2. It uses a multi-agent pipeline to perform pattern audits and issue labeling on product pairs or recommendation lists.\n3. It aggregates labels from multiple LLM auditors via majority vote or consensus to form ground-truth.\n4. It systematically evaluates dozens of models, including GPT, Gemini, Claude, Llama, and others.\n5. It is designed to study the consistency, reliability, and scalability of LLM judges without additional human annotation.",
+    "ground_truth": {
+      "dataset_name": "ScalingEval",
+      "positives": ["https://arxiv.org/pdf/2511.03051v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "ScalingEval is a large-scale benchmark that uses a multi-agent framework to perform pattern audits and issue annotations on complementary product recommendation pairs, and obtains ground-truth via majority voting. It systematically compares the judging performance of 36 models including GPT, Gemini, Claude, and Llama, exactly matching the scenario described in the query."
+    },
+    "meta": {
+      "domain": "LLM evaluation / recommender systems",
+      "query_type": "benchmark retrieval",
+      "difficulty": "medium",
+      "conditions": [
+        "Focuses on the LLM-as-a-judge setting",
+        "Task is to evaluate complementary product recommendation relationships",
+        "Uses multi-agent pipelines and majority voting to generate labels",
+        "Covers dozens of mainstream large models",
+        "Serves as a systematic comparison benchmark"
+      ]
+    }
+  },
+  {
+    "id": "Q39",
+    "query": "I want to evaluate the overall capabilities of code agents in real software engineering scenarios and need a unified software engineering benchmark constructed from GitHub pull requests: it should cover eight task types, multiple programming scenarios, and ten programming languages, and each instance should come with a reproducible execution environment to test agents on bug fixing, refactoring, and feature addition. What is this benchmark called?",
+    "instruction": "Return the benchmark whose description satisfies ALL of the following:\n1. It is a unified, execution-grounded software engineering benchmark built from real GitHub pull requests.\n2. It covers around eight task types (e.g., bug fixing, refactoring, feature addition, etc.) and multiple programming scenarios.\n3. It supports ten different programming languages.\n4. Each instance includes a reproducible or replayable execution environment for automatic verification.\n5. It is specifically designed to evaluate code agents' comprehensive abilities in realistic software engineering workflows.",
+    "ground_truth": {
+      "dataset_name": "SWE-Compass",
+      "positives": ["https://arxiv.org/pdf/2511.05459v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "SWE-Compass is a unified software engineering evaluation benchmark built from real GitHub pull requests, covering eight task types, eight programming scenarios, and ten programming languages. Each instance has a replayable execution environment and is designed to evaluate code agents' performance on fixing, refactoring, and extending functionality, fully aligning with the query's conditions."
+    },
+    "meta": {
+      "domain": "software engineering / code agents",
+      "query_type": "benchmark retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Data sourced from real GitHub pull requests",
+        "Covers eight task types and multiple engineering scenarios",
+        "Supports ten programming languages",
+        "Each instance has a reproducible execution environment",
+        "Used to evaluate the comprehensive capabilities of code agents"
+      ]
+    }
+  },
+  {
+    "id": "Q40",
+    "query": "I'm building a news recommendation system and want a click-log dataset with complete user profiles and article content: it should be split into three tables (.inter, .user, .item) following the RecBole format, provide small/medium/large versions, and contain rich features such as click and impression labels, timestamps, geographic locations, and devices, so it can be used to study scalability in large-scale recommendation. What is the name of this dataset?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a news or content recommendation click-log dataset.\n2. It is provided in the RecBole format with three tables: .inter, .user, and .item.\n3. It has multiple scale variants (e.g., small, medium, large).\n4. It includes rich features such as click and impression labels, timestamps, geographic locations, and device information.\n5. It is intended for studying scalability and performance in large-scale recommendation systems.",
+    "ground_truth": {
+      "dataset_name": "RASP recommendation dataset",
+      "positives": ["https://arxiv.org/pdf/2511.02052v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "The paper constructs a \"golden\" RASP recommendation dataset, split into .inter, .user, and .item files under the unified RecBole format, and provides small/medium/large versions. It includes rich features such as click/impression labels, timestamps, geographic locations, and devices, exactly matching the recommended log dataset described in the query."
+    },
+    "meta": {
+      "domain": "recommender systems",
+      "query_type": "dataset retrieval",
+      "difficulty": "medium",
+      "conditions": [
+        "News/content recommendation click-log setting",
+        "RecBole three-table structure (.inter/.user/.item)",
+        "Multiple scales (small/medium/large) provided",
+        "Includes click/impression, time, location, device, and other features",
+        "Used to study scalability in large-scale recommendation"
+      ]
+    }
+  },
+  {
+    "id": "Q41",
+    "query": "I'm doing syntactic understanding evaluation and want a reading-comprehension dataset specifically targeting center-embedded sentences: it should have around 9,700+ comprehension questions built around a few hundred center-embedded sentences, organized into minimal pairs where some sentences share identical syntax but have clearly implausible semantics, so we can tell whether models rely on true syntactic parsing or shortcut via semantic plausibility. What is this dataset called?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a reading comprehension benchmark centered on center-embedded sentences.\n2. It contains around 9,700 or more comprehension questions built around a few hundred center-embedded structures.\n3. It organizes examples into minimal pairs where sentences share (nearly) identical syntax but differ in semantic plausibility.\n4. It is explicitly designed to test whether models rely on genuine syntactic parsing versus semantic shortcuts.\n5. It is known under a name that emphasizes center-embedding or similar syntactic phenomena.",
+    "ground_truth": {
+      "dataset_name": "CENTERBENCH",
+      "positives": ["https://arxiv.org/pdf/2510.20543v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "CENTERBENCH is built specifically from center-embedded sentences, with about 9,720 comprehension questions constructed around hundreds of center-embedded sentences, and minimal contrast pairs where syntax is nearly identical but semantics are implausible. It is designed to test whether models truly parse syntax rather than rely on semantic shortcuts, highly consistent with the query's scale, structure, and research purpose."
+    },
+    "meta": {
+      "domain": "psycholinguistics / syntactic comprehension / reading comprehension",
+      "query_type": "dataset retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Focuses on comprehension of center-embedded sentences",
+        "Around 9,700+ comprehension questions (on the order of 10K)",
+        "Built around hundreds of center-embedded structures as minimal pairs",
+        "Contrast sentences share similar syntax but with clearly implausible semantics",
+        "Used to diagnose whether models rely on syntactic structure or semantic heuristics"
+      ]
+    }
+  },
+  {
+    "id": "Q42",
+    "query": "I need a multilingual, multimodal benchmark specifically for evaluating large models in e-commerce scenarios: it should cover multiple major e-commerce task categories (such as product search, QA, recommendation, customer service, content generation, etc.), include more than thirty tasks in total, and have a number of tasks that require both images and text. The data should mainly come from real customer inquiries and transaction logs. What is this benchmark called?",
+    "instruction": "Return the benchmark whose description satisfies ALL of the following:\n1. It is a comprehensive evaluation benchmark for large models in e-commerce scenarios.\n2. It is multilingual and includes multimodal tasks involving both images and text.\n3. It covers multiple major e-commerce task categories such as product search, QA, recommendation, customer service, and content generation.\n4. It defines over 30 individual tasks, with several of them being multimodal.\n5. Its data are mainly sourced from real customer queries and transaction or business logs.",
+    "ground_truth": {
+      "dataset_name": "EcomEval",
+      "positives": ["https://arxiv.org/pdf/2510.20632v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "EcomEval is proposed as a comprehensive multilingual, multimodal evaluation benchmark for e-commerce, covering six top-level categories and 37 tasks (including eight multimodal tasks). Its data comes from real customer queries and transaction logs, matching the requirements of e-commerce, multilingual, multimodal, multi-task, and real business sources described in the query."
+    },
+    "meta": {
+      "domain": "e-commerce / multimodal / LLM benchmarks",
+      "query_type": "benchmark retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Evaluation of large models in the e-commerce vertical",
+        "Multilingual and multimodal (including image–text tasks)",
+        "Covers about 30–40 subtasks (search, QA, recommendation, customer service, etc.)",
+        "Some tasks require combining product images and text",
+        "Data mainly from real customer inquiries and transaction/business logs"
+      ]
+    }
+  },
+  {
+    "id": "Q43",
+    "query": "I'm working on visual QA and multimodal reasoning for 3D medical images and need a 3D grounding + QA dataset for knee MRI: ideally, it should contain several thousand 3D knee MRI scans, from which dozens of questions can be constructed per case, giving in total hundreds of thousands of quintuple samples (question, answer, 3D bounding box annotation, clinician reasoning text, and anatomical region labels) to evaluate models' joint understanding of 3D structure and clinical reasoning. Is there such an existing dataset?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a 3D medical imaging dataset focused on knee MRI.\n2. It supports both visual QA and 3D grounding/localization tasks.\n3. Each sample is a quintuple containing at least: question, answer, 3D bounding box or voxel-level annotation, clinician reasoning text, and anatomical region labels.\n4. It is built from several thousand 3D knee MRI scans and contains on the order of hundreds of thousands of such quintuples.\n5. It is explicitly designed to evaluate models' joint understanding of 3D anatomy and clinical diagnostic reasoning.",
+    "ground_truth": {
+      "dataset_name": "3DReasonKnee",
+      "positives": ["https://arxiv.org/pdf/2510.20967v1.pdf"],
+      "dataset_link": "https://huggingface.co/datasets/rajpurkarlab/3DReasonKnee",
+      "relevance_rationale": "3DReasonKnee is the first 3D medical grounding + QA dataset specifically for the knee, built from 7,970 3D knee MRI scans and constructing about 494K quintuple samples (question, answer, voxel-level box, clinician diagnostic reasoning, and anatomical structure labels). Its modalities, task form, and scale closely match what the query describes."
+    },
+    "meta": {
+      "domain": "medical imaging / 3D VQA / grounding",
+      "query_type": "dataset retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Dataset centered on 3D knee MRI scans",
+        "Supports both visual QA and 3D localization (grounding) tasks",
+        "Samples are quintuples: question, answer, 3D box, clinician reasoning, anatomical region",
+        "Total scale on the order of hundreds of thousands of instances (about 494K)",
+        "Used to evaluate models' joint understanding of 3D structure and clinical diagnostic reasoning"
+      ]
+    }
+  },
+  {
+    "id": "Q44",
+    "query": "I want a Chinese clinical medication recommendation dataset focused on discharge prescriptions for metabolic diseases: it should contain discharge records for several thousand real patients, with structured fields such as diagnoses, lab indicators, and medication history, and provide the actual discharge medication plans written by physicians, so it can be used to train and evaluate discharge medication recommendation models. What is this dataset called?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a Chinese clinical dataset for discharge medication recommendation.\n2. It focuses on patients with metabolic diseases.\n3. It contains discharge records for several thousand real patients and thousands of de-identified discharge summaries.\n4. Each record includes structured fields such as diagnoses, examinations/lab indicators, and medication history.\n5. It provides the actual discharge medication plans prescribed by physicians, enabling training and evaluation of discharge medication recommendation models.",
+    "ground_truth": {
+      "dataset_name": "CDrugRed",
+      "positives": ["https://arxiv.org/pdf/2510.21084v1.pdf"],
+      "dataset_link": "https://github.com/DUTIR-BioNLP/CDrugRed",
+      "relevance_rationale": "CDrugRed is the first public Chinese discharge medication recommendation dataset focusing on metabolic diseases, containing 3,190 patients and 5,894 de-identified discharge records. It provides structured information such as diagnoses, examinations, and medications, together with the actual discharge medication plans, fully matching the scenario and scale described in the query."
+    },
+    "meta": {
+      "domain": "medical NLP / medication recommendation",
+      "query_type": "dataset retrieval",
+      "difficulty": "medium",
+      "conditions": [
+        "Chinese clinical discharge medication recommendation scenario",
+        "Focus on patients with metabolic diseases",
+        "Several thousand patients and thousands of de-identified discharge records",
+        "Includes structured fields like diagnoses, examinations, and medication history",
+        "Records physicians' real discharge medication plans for recommendation modeling"
+      ]
+    }
+  },
+  {
+    "id": "Q45",
+    "query": "I'm studying the robustness of large models in travel itinerary planning and want a dedicated dataset: tasks should be built around real travel itineraries, where the model first proposes a full plan and then must adjust it when realistic disruptions such as flight cancellations or bad weather are introduced. The data should include human-annotated reference responses, along with automatic metrics such as \"preservation of the original plan\" and \"consistency with user preferences.\" Which benchmark is this?",
+    "instruction": "Return the benchmark whose description satisfies ALL of the following:\n1. It is a benchmark for evaluating large models' robustness in travel itinerary planning.\n2. Tasks involve real or realistic travel itineraries that must be revised when disruptions occur (e.g., flight cancellations, bad weather).\n3. It provides human-annotated reference adjustments to the itineraries.\n4. It defines automatic metrics such as preservation of the original plan and consistency with user preferences.\n5. It is explicitly positioned as a benchmark for robustness in travel planning under real-world disturbances.",
+    "ground_truth": {
+      "dataset_name": "TripTide",
+      "positives": ["https://arxiv.org/pdf/2510.21329v1.pdf"],
+      "dataset_link": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "relevance_rationale": "TripTide is proposed as the first benchmark specifically designed to assess robustness of large models in travel planning under real-world disruptions. It includes original itineraries, various realistic disturbances, and human-revised plans, and defines automatic metrics such as Preservation of Plan, aligning perfectly with the description in the query."
+    },
+    "meta": {
+      "domain": "task planning / travel recommendation / LLM robustness",
+      "query_type": "benchmark retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Focuses on travel itinerary planning tasks",
+        "Explicitly introduces real-world disruptions (flight cancellations, weather, etc.)",
+        "Requires models to revise the original itinerary based on disruptions",
+        "Includes human expert revised plans as references",
+        "Provides automatic evaluation metrics for plan preservation and preference consistency"
+      ]
+    }
+  },
+  {
+    "id": "Q46",
+    "query": "I need a corner-case benchmark for autonomous driving trajectory prediction: it should be built by selecting four kinds of \"corner scenarios\" from real road-testing data such as nuScenes, including sharp turns, occlusions, and sudden pedestrian appearances, and be used to evaluate mainstream motion prediction models under more challenging conditions to test safety in extreme traffic situations. What is this benchmark dataset called?",
+    "instruction": "Return the benchmark whose description satisfies ALL of the following:\n1. It is a corner-case benchmark for motion or trajectory prediction in autonomous driving.\n2. It is constructed from a real large-scale driving dataset such as nuScenes.\n3. It specifically selects several types of high-risk \"corner\" scenarios (e.g., sharp turns, occlusions, sudden pedestrian appearances).\n4. It is designed to evaluate mainstream trajectory prediction models under these challenging conditions.\n5. Its primary goal is to test safety and robustness in extreme or rare traffic situations.",
+    "ground_truth": {
+      "dataset_name": "nuScenescorner",
+      "positives": ["https://arxiv.org/pdf/2510.21867v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "nuScenescorner is a new benchmark constructed from four types of real corner-case scenarios extracted from nuScenes, designed to evaluate motion/trajectory prediction models in complex edge traffic situations. This matches the nuScenes source, corner-case focus, and evaluation purpose described in the query."
+    },
+    "meta": {
+      "domain": "autonomous driving / motion prediction / safety evaluation",
+      "query_type": "benchmark retrieval",
+      "difficulty": "medium",
+      "conditions": [
+        "Based on real autonomous driving data (such as nuScenes)",
+        "Specifically selects corner-case extreme traffic scenarios",
+        "Covers multiple high-risk situations (sharp turns, occlusions, etc.)",
+        "Used to evaluate vehicle/pedestrian motion prediction models",
+        "Focuses on safety and robustness in difficult scenarios"
+      ]
+    }
+  },
+  {
+    "id": "Q47",
+    "query": "I'm working on systematic relational reasoning and need a dedicated dataset: instead of traditional path reasoning, it should allow multiple relations to exist between the same entity pair and contain complex compositional structures, explicitly designed to break models' bias toward simple path-following so that they truly learn systematic relational reasoning. What is this benchmark called?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a benchmark for systematic neural relational reasoning.\n2. It explicitly aims to break models' path-based inductive bias in relational reasoning.\n3. It allows multiple relations to exist between the same pair of entities.\n4. It includes complex relational structures and compositional relation patterns.\n5. It is used to evaluate models' ability to perform systematic relational reasoning and generalization beyond simple path-following.",
+    "ground_truth": {
+      "dataset_name": "NoRA",
+      "positives": ["https://arxiv.org/pdf/2510.23532v1.pdf"],
+      "dataset_link": "https://huggingface.co/datasets/",
+      "relevance_rationale": "NoRA is proposed as a benchmark for systematic neural relational reasoning, explicitly aiming to break models' path-based inductive bias and allowing multiple relations to co-exist between the same entity pair while covering complex relational structures, which closely fits the query's requirements on systematic relational reasoning and non-path-based setups."
+    },
+    "meta": {
+      "domain": "logical reasoning / relational reasoning / systematic generalization",
+      "query_type": "benchmark retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Dataset specifically for systematic neural relational reasoning",
+        "Explicitly aims to break path-based inductive biases",
+        "Allows multiple relations between the same entity pair",
+        "Covers many complex combinations of relations",
+        "Used to evaluate models' systematic compositionality and generalization"
+      ]
+    }
+  },
+  {
+    "id": "Q48",
+    "query": "I need a QA benchmark specifically for assessing whether large models \"understand chess\": it should contain around 50 tasks and 3,500 questions, organized into curriculum-style difficulty levels such as structural knowledge, tactical patterns, position evaluation, and semantic understanding, so we can systematically probe how well models grasp rules, strategy, and verbal descriptions of chess. What is this benchmark called?",
+    "instruction": "Return the benchmark whose description satisfies ALL of the following:\n1. It is a question-answering benchmark focused on chess.\n2. It contains around 50 tasks and approximately 3,500 questions in total.\n3. Tasks are organized into curriculum-style categories such as structural knowledge, tactical patterns, position evaluation, and semantic understanding.\n4. It is designed to systematically probe models' understanding of chess rules, strategy, and natural-language descriptions of positions.\n5. It is explicitly proposed as a benchmark to assess how well large language models understand chess.",
+    "ground_truth": {
+      "dataset_name": "ChessQA",
+      "positives": ["https://arxiv.org/pdf/2510.23948v1.pdf"],
+      "dataset_link": "https://database.lichess.org/#evals",
+      "relevance_rationale": "ChessQA is a benchmark for evaluating LLMs' understanding of chess, containing 50 tasks and about 3,500 questions organized into curriculum-style difficulty categories such as structure, tactics, position evaluation, and semantics, which exactly matches the task count, question scale, and category design described in the query."
+    },
+    "meta": {
+      "domain": "game reasoning / chess / LLM evaluation",
+      "query_type": "benchmark retrieval",
+      "difficulty": "medium",
+      "conditions": [
+        "QA-style benchmark centered on chess",
+        "Around 50 tasks and 3,500 questions",
+        "Curriculum-style division into structure, patterns, evaluation, and semantics",
+        "Used to systematically probe models' understanding of rules, tactics, and semantic descriptions",
+        "Supports analysis of differences among models on chess reasoning"
+      ]
+    }
+  },
+  {
+    "id": "Q49",
+    "query": "I'm working on multimodal conversational recommendation and am particularly interested in fashion shopping scenarios: I want a dataset containing dozens of human–human fashion shopping dialogues, where each dialogue is associated with a shared visual product catalog (with images and attributes), a user fashion preference profile, and hierarchical intent and slot annotations, so I can train a \"see images + chat + choose clothes\" conversational recommender system. What is this dataset called?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a multimodal conversational recommendation dataset focused on fashion or outfit shopping.\n2. It consists of human–human multi-turn dialogues about fashion shopping.\n3. Each dialogue is associated with a shared visual product catalog containing images and attribute information.\n4. It includes user fashion preference profiles.\n5. It provides hierarchical dialogue intent and slot annotations to support training conversational recommenders that \"see images + chat + choose clothes.\"",
+    "ground_truth": {
+      "dataset_name": "Vogue",
+      "positives": ["https://arxiv.org/pdf/2510.21151v1.pdf"],
+      "dataset_link": "",
+      "relevance_rationale": "Vogue is a newly proposed multimodal conversational fashion shopping dataset, consisting of about 60 real human–human dialogues, each paired with a shared visual product catalog, product attributes, user fashion profiles, and hierarchical intent/slot annotations, which exactly matches the \"see images + chat + choose clothes\" scenario described in the query."
+    },
+    "meta": {
+      "domain": "multimodal conversational recommendation / fashion shopping",
+      "query_type": "dataset retrieval",
+      "difficulty": "medium",
+      "conditions": [
+        "Focuses on fashion / outfit shopping scenarios",
+        "Human–human multi-turn dialogue data",
+        "Linked to a shared visual product catalog with attribute information",
+        "Includes user fashion preference profiles",
+        "Provides hierarchical dialogue intent and slot annotations for conversational recommendation"
+      ]
+    }
+  },
+  {
+    "id": "Q50",
+    "query": "I'm planning to study \"natural-language user profile driven paper recommendation\" and want a synthetic dataset: it should automatically generate multilingual natural-language user profiles from real authors' publication records and associate each profile with a set of \"papers that should be recommended\" as ground truth, so we can evaluate how well LLMs read profiles and make recommendations. What is this dataset called?",
+    "instruction": "Return the dataset whose description satisfies ALL of the following:\n1. It is a synthetic dataset for scientific paper recommendation based on natural-language user profiles.\n2. User profiles are automatically generated from real authors' publication histories.\n3. Profiles are expressed in natural language (and potentially multilingual).\n4. For each profile, the dataset provides a ground-truth set of papers that should be recommended.\n5. It is explicitly designed to evaluate models' ability to read natural-language user profiles and perform paper recommendation.",
+    "ground_truth": {
+      "dataset_name": "SciNUP",
+      "positives": ["https://arxiv.org/pdf/2510.21352v1.pdf"],
+      "dataset_link": "https://github.com/iai-group/SciNUP",
+      "relevance_rationale": "SciNUP (Scientific Natural Language User Profiles) is a synthetic dataset for natural-language user profile driven recommendation, which automatically generates NL user profiles from authors' publication histories and provides ground-truth paper sets for each profile, used to evaluate NL-based recommendation, exactly matching the scenario described in the query."
+    },
+    "meta": {
+      "domain": "academic recommendation / user profiles / LLMs",
+      "query_type": "dataset retrieval",
+      "difficulty": "hard",
+      "conditions": [
+        "Targets paper / scientific literature recommendation tasks",
+        "Generates natural-language user profiles from authors' publication histories",
+        "Provides a ground-truth set of recommended papers for each profile",
+        "Synthetic data built from real publication histories",
+        "Specifically designed to evaluate recommendation driven by natural-language user profiles"
+      ]
+    }
+  },
+  {
+    "id": "Q51",
+    "domain": "Recommender systems / multi-behavior sequential recommendation (short-video)",
+    "difficulty": "advanced",
+    "query": "Find the large-scale recommendation dataset that collects multi-behavior interaction logs from a mainstream short-video platform, including behaviors like viewing, liking, sharing, and following, and that also releases pretrained semantic item IDs to support generative sequential recommendation models.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a large-scale multi-behavior sequential recommendation dataset built from a mainstream short-video platform rather than a traditional e-commerce site; (2) user–item interactions include multiple behavior types such as views, likes, favorites, shares, and follows instead of a single implicit feedback signal; (3) the dataset is explicitly introduced together with a generative multi-behavior recommendation framework (e.g., MBGen); (4) it provides pretrained semantic IDs or embeddings for items so that generative models can directly operate on these identifiers; (5) it is positioned as fundamentally different from prior e-commerce logs and released as an open resource for research.",
+    "ground_truth": {
+      "dataset_name": "ShortVideoAD (multi-behavior short-video recommendation dataset)",
+      "positives": ["https://arxiv.org/pdf/2511.03155v1.pdf"],
+      "dataset_link": "https://github.com/anananan116/MBGen/tree/main/data"
+    },
+    "conditions": [
+      "Multi-behavior sequential recommendation dataset (not single-behavior)",
+      "Collected from a mainstream short-video platform",
+      "Includes multiple behavior types (view, like, favorite, share, follow, etc.)",
+      "Released together with the MBGen generative recommendation framework",
+      "Provides pretrained semantic item IDs / embeddings for research use"
+    ]
+  },
+  {
+    "id": "Q52",
+    "domain": "Scientific information retrieval / paper-to-paper retrieval",
+    "difficulty": "advanced",
+    "query": "Identify the scientific retrieval benchmark where both queries and candidates are full research papers with complete and section-level representations, enabling fine-grained paper-to-paper retrieval evaluation across diverse scientific domains.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is a benchmark for paper-to-paper retrieval in the scientific literature; (2) both query and candidate documents are full research papers, not just abstracts; (3) the benchmark provides complete and segmented contexts for each paper (e.g., abstract, introduction, methods, etc.) so that models can retrieve using different granularities; (4) it is specifically presented as a large-scale benchmark for evaluating a multi-aspect-aware retrieval model (e.g., PRISM); (5) it aims to test fine-grained matching of scientific papers across many fields rather than a single narrow domain.",
+    "ground_truth": {
+      "dataset_name": "SciFullBench (full-paper scientific retrieval benchmark)",
+      "positives": ["https://arxiv.org/pdf/2507.10057v2.pdf"],
+      "dataset_link": "https://github.com/psw0021/"
+    },
+    "conditions": [
+      "Benchmark for paper-to-paper retrieval over scientific articles",
+      "Provides both full-text and segmented views of each paper",
+      "Used to evaluate PRISM or similar multi-aspect-aware retrieval models",
+      "Covers multiple scientific domains rather than a single field",
+      "Emphasizes fine-grained matching between query and candidate papers"
+    ]
+  },
+  {
+    "id": "Q53",
+    "domain": "LLM-as-a-judge / recommendation evaluation",
+    "difficulty": "advanced",
+    "query": "Find the benchmark that constructs a large matrix of product anchor–recommendation list pairs, has multiple LLM agents audit each recommendation, and aggregates their pattern-level issue codes into ground-truth labels to compare the evaluation quality of dozens of LLM judges without additional human annotation.",
+    "instruction": "Retrieve the benchmark description that satisfies ALL of the following: (1) it is explicitly named around scaling or test-time evaluation of LLMs as judges (e.g., ScalingEval); (2) the core data structure is a structured matrix whose rows correspond to product \"anchor\" items and columns or entries correspond to recommended items or ranked lists; (3) each anchor–recommendation example is annotated with pattern audits and issue codes provided by multiple LLM auditors, which are then combined via a consensus or majority-vote protocol into ground-truth labels; (4) the study systematically compares more than 30 different LLMs across multiple product categories using this matrix; (5) the benchmark is designed to enable reproducible, no-human-in-the-loop evaluation of LLM judges for recommendation quality.",
+    "ground_truth": {
+      "dataset_name": "ScalingEval (LLM-as-a-judge recommendation evaluation benchmark)",
+      "positives": ["https://arxiv.org/pdf/2511.03051v1.pdf"],
+      "dataset_link": ""
+    },
+    "conditions": [
+      "Benchmark focused on evaluating LLMs as recommendation judges",
+      "Uses an anchor–recommendation matrix annotated with pattern audits and issue codes",
+      "Aggregates multiple LLM audits into consensus ground-truth labels",
+      "Compares roughly 30–40 LLMs across several product categories",
+      "Designed for no-human-in-the-loop, reproducible evaluation"
+    ]
+  },
+  {
+    "id": "Q54",
+    "domain": "Knowledge graph question answering and retrieval",
+    "difficulty": "advanced",
+    "query": "Locate the knowledge-graph question answering dataset that is generated by a synthetic framework and, for each question, provides the full set of supporting facts as a ground-truth subgraph of a large KG like Wikidata, specifically to test zero-shot generalization of KG retrievers to unseen graph structures and relation types.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is produced by a synthetic framework for KG QA dataset construction (e.g., SynthKGQA); (2) the underlying KG is a large, real-world graph such as Wikidata; (3) for every question, the dataset includes the complete set of ground-truth triples in the KG that are needed to derive the answer, forming an explicit subgraph; (4) it is explicitly designed to benchmark KG retrievers on zero-shot generalization to unseen graph structures and relation types; (5) it is positioned as a challenging target dataset, often referred to as something like GTSQA2, for training and evaluating KG-augmented LLMs.",
+    "ground_truth": {
+      "dataset_name": "GTSQA2 (SynthKGQA-generated KG QA dataset on Wikidata)",
+      "positives": ["https://arxiv.org/pdf/2511.04473v1.pdf"],
+      "dataset_link": ""
+    },
+    "conditions": [
+      "Generated by the SynthKGQA framework from a large KG (Wikidata)",
+      "Provides full ground-truth subgraphs (triples) for each question",
+      "Targets zero-shot generalization to unseen structures and relations",
+      "Intended for benchmarking KG retrievers and KG-augmented LLMs",
+      "Referenced under the name GTSQA2 or similar in the paper"
+    ]
+  },
+  {
+    "id": "Q55",
+    "domain": "Music information retrieval / music emotion recognition",
+    "difficulty": "intermediate",
+    "query": "Identify the music–emotion dataset that consists of improvised songs recorded by around twenty young adults, where each song is annotated with arousal and valence scores in Russell’s circumplex model and released with aligned audio, lyrics text, and MIDI melody files grouped into four emotion quadrants.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is explicitly introduced as an open dataset of improvised songs with emotion data (e.g., Emo100DB); (2) the recordings come from about 20 young adult participants who both perform and record the songs; (3) each song is annotated using Russell’s circumplex model of emotion, with arousal and valence values determining its placement in one of four quadrants; (4) the released data for each song include at least the original audio in WAV format, the lyrics text, and a MIDI file of the extracted melody line; (5) the dataset is intended to support research on music emotion recognition and the relationship between musical content and human affect.",
+    "ground_truth": {
+      "dataset_name": "Emo100DB (improvised song emotion dataset)",
+      "positives": ["https://arxiv.org/pdf/2511.04755v1.pdf"],
+      "dataset_link": "https://github.com/hdaeun98/emo100db"
+    },
+    "conditions": [
+      "Open dataset of improvised songs with emotion annotations",
+      "Approximately 20 young adult participants",
+      "Annotations in arousal–valence space (Russell’s circumplex model)",
+      "Includes audio (WAV), lyrics, and MIDI melodies",
+      "Songs categorized into four emotion quadrants"
+    ]
+  },
+  {
+    "id": "Q56",
+    "domain": "Interactive evaluation of large multimodal models",
+    "difficulty": "advanced",
+    "query": "Find the benchmark suite that evaluates the interactive intelligence of large multimodal models by simulating feedback-driven sessions on datasets like MMMU-Pro and MathVerse, and also releases a 120-case human-curated dataset of real interactive transcripts with frontier models such as OpenAI-o1 and Claude 3.5.",
+    "instruction": "Retrieve the benchmark description that satisfies ALL of the following: (1) it is explicitly framed around interactive intelligence and human feedback for large multimodal models; (2) it defines an automated benchmark, InterFeedback-Bench, that runs multi-turn interaction loops on existing datasets such as MMMU-Pro and MathVerse, where models receive feedback and are expected to revise their answers; (3) it additionally introduces a separate human-collected dataset, InterFeedback-Human, containing about 120 real interactive cases with systems like OpenAI-o1 and Claude-3.5-Sonnet; (4) both components are used together to evaluate how well models can interpret and benefit from human feedback; (5) the benchmark highlights that even state-of-the-art LMMs improve their answers less than 50% of the time after feedback.",
+    "ground_truth": {
+      "dataset_name": "InterFeedback-Bench and InterFeedback-Human",
+      "positives": ["https://arxiv.org/pdf/2502.15027v3.pdf"],
+      "dataset_link": "https://openai.com/o1/"
+    },
+    "conditions": [
+      "Benchmarks interactive intelligence of large multimodal models",
+      "Includes InterFeedback-Bench built on MMMU-Pro and MathVerse",
+      "Includes InterFeedback-Human with ~120 human-curated interactive cases",
+      "Focuses on feedback-driven multi-turn correction of model answers",
+      "Reports that even top models correct themselves in <50% of cases"
+    ]
+  },
+  {
+    "id": "Q57",
+    "domain": "Software engineering benchmarks for LLM coding agents",
+    "difficulty": "advanced",
+    "query": "Identify the software engineering benchmark that unifies heterogeneous code-related evaluations into a single framework spanning eight task types, eight programming scenarios, ten programming languages, and about two thousand GitHub pull-request–derived instances to test agentic coding abilities of large language models.",
+    "instruction": "Retrieve the benchmark description that satisfies ALL of the following: (1) it is explicitly introduced as a comprehensive, execution-grounded benchmark for software engineering agents (e.g., SWE-Compass); (2) it unifies multiple kinds of code-related tasks into a single framework with roughly 8 task types (such as implementation, refactoring, debugging, and code review); (3) it covers around 8 realistic programming scenarios and 10 programming languages; (4) the benchmark instances, about 2,000 in total, are curated from authentic GitHub pull requests and then filtered and validated; (5) it is used to evaluate LLM agents under frameworks like SWE-Agent and Claude Code, revealing systematic difficulty differences across tasks and languages.",
+    "ground_truth": {
+      "dataset_name": "SWE-Compass",
+      "positives": ["https://arxiv.org/pdf/2511.05459v1.pdf"],
+      "dataset_link": ""
+    },
+    "conditions": [
+      "Execution-grounded benchmark for software engineering agents",
+      "≈2,000 curated instances from real GitHub pull requests",
+      "8 task types, 8 scenarios, and 10 programming languages",
+      "Used with agentic coding frameworks such as SWE-Agent and Claude Code",
+      "Designed to reflect real-world developer workflows and difficulty"
+    ]
+  },
+  {
+    "id": "Q58",
+    "domain": "Long-form video temporal search and reinforcement learning",
+    "difficulty": "advanced",
+    "query": "Which training dataset suite is constructed specifically for the TimeSearch-R framework to support SFT cold-start and reinforcement-learning training of a GRPO-based temporal search policy, filtering out samples with weak temporal dependencies so that models must gather sufficiently informative frames to answer long-form video questions?",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is introduced together with the TimeSearch-R framework for adaptive temporal search in long videos; (2) it comprises datasets built explicitly for supervised fine-tuning (SFT) cold-start and subsequent reinforcement-learning training of a GRPO-style policy with Completeness Self-Verification (GRPO-CSV); (3) the construction process filters out training samples with weak or trivial temporal dependencies so that remaining examples require reasoning over time; (4) supervision encourages the model to search for, and verify, a sufficient set of frames before answering long-form video questions; (5) the datasets are released or referenced alongside code for TimeSearch-R.",
+    "ground_truth": {
+      "dataset_name": "TimeSearch-R SFT and RL training datasets",
+      "positives": ["https://arxiv.org/pdf/2511.05489v1.pdf"],
+      "dataset_link": "https://github.com/Time-Search/TimeSearch-R"
+    },
+    "conditions": [
+      "Constructed as training data for the TimeSearch-R temporal search framework",
+      "Includes distinct datasets for SFT cold-start and RL training",
+      "Filters out examples with weak temporal dependencies",
+      "Encourages complete frame search via GRPO-CSV self-verification",
+      "Released or described together with the TimeSearch-R codebase"
+    ]
+  },
+  {
+    "id": "Q59",
+    "domain": "Syntactic comprehension and structural generalization in LLMs",
+    "difficulty": "advanced",
+    "query": "Find the language understanding dataset that contains 9,720 comprehension questions about center-embedded sentences like \"The cat that the dog chased meowed\", where each sentence has a semantically implausible twin and six questions probing surface understanding, syntactic dependencies, and causal reasoning.",
+    "instruction": "Retrieve the dataset description that satisfies ALL of the following: (1) it is explicitly introduced as a benchmark for measuring when language models abandon structural analysis in favor of semantic shortcuts (e.g., CenterBench); (2) the core data consist of center-embedded sentences with recursive relative clauses, paired with semantically implausible variants that keep syntax identical but swap roles (e.g., doctors delivering mail); (3) the dataset contains roughly 9,720 comprehension questions derived from about 360 sentence pairs, with six questions per sentence; (4) questions are designed to separately test surface-level understanding, syntactic dependency tracking, and causal reasoning; (5) it is intended to reveal how performance gaps between plausible and implausible sentences widen as structural complexity increases.",
+    "ground_truth": {
+      "dataset_name": "CenterBench",
+      "positives": ["https://arxiv.org/pdf/2510.20543v1.pdf"],
+      "dataset_link": "https://anthropic.com/workbench"
+    },
+    "conditions": [
+      "Benchmark on center-embedded sentences with recursive relative clauses",
+      "≈360 sentence pairs (plausible vs. implausible) and 9,720 questions",
+      "Six comprehension questions per sentence targeting different skills",
+      "Measures when models rely on semantic plausibility over syntax",
+      "Dataset released to study structural generalization in LLMs"
+    ]
+  },
+  {
+    "id": "Q60", 
+    "domain": "Multilingual and multimodal e-commerce evaluation for LLMs", 
+    "difficulty": "advanced", 
+    "query": "Locate the multilingual and multimodal e-commerce benchmark that spans six top-level categories and thirty-seven tasks, including eight multimodal ones, built from authentic customer queries and transaction logs in seven languages such as English, Chinese, Indonesian, Vietnamese, Thai, Malay, and Portuguese.", 
+    "instruction": "Retrieve the benchmark description that satisfies ALL of the following: (1) it is explicitly introduced as a comprehensive multilingual and multimodal benchmark for evaluating LLMs in e-commerce (e.g., EcomEval); (2) it defines around six major task categories, including e-commerce question answering, shopping concepts, user understanding, shopping reasoning, generation, and multimodal tasks; (3) in total it includes approximately 37 distinct tasks, about 8 of which are multimodal, using image–text product data; (4) data are sourced primarily from authentic customer service queries and transaction logs, preserving the noisy, heterogeneous nature of real interactions; (5) it covers seven languages, including several low-resource Southeast Asian languages such as Indonesian, Vietnamese, Thai, and Malay, in addition to English, Chinese, and Portuguese.", 
+    "ground_truth": { 
+      "dataset_name": "EcomEval", 
+      "positives": ["https://arxiv.org/pdf/2510.20632v1.pdf"],
+      "dataset_link": "https://github.com/ShopeeLLM/EcomEval" },
+    "conditions": [ "Multilingual, multimodal benchmark for e-commerce LLM evaluation", "Six major task categories and ≈37 tasks total", "Includes ≈8 multimodal tasks with product images and text", "Data drawn from real customer queries and transaction logs", "Spans 7 languages including several low-resource Southeast Asian languages" ] 
+  },
+
+  {
+  "id": "Q61",
+  "query": "Which dataset is a large-scale multi-behavior log from a mainstream short-video platform that records three hierarchical user behaviors for short-video advertising and also provides pretrained semantic IDs for generative recommendation models?",
+  "instruction": "You are an expert recommender-systems research assistant. You have access to paper abstracts and dataset cards about user–item interaction logs. Read the descriptions and identify the single dataset that best matches the user’s description. Answer with the dataset name only (no explanation, no punctuation). If there is no clear match, reply with 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "ShortVideoAD",
+    "positives": ["https://arxiv.org/pdf/2511.03155v1.pdf"],
+    "dataset_link": "https://github.com/anananan116/MBGen/tree/main/data"
+  },
+  "meta": {
+    "dataset_description": "Real-world multi-behavior dataset collected from a major short-video ad platform, logging three hierarchical user behaviors and exposing pretrained semantic IDs as a testbed for generative recommendation.",
+    "reasoning": "The query describes a short-video advertising dataset with three-level user behaviors and pretrained semantic IDs; this uniquely identifies ShortVideoAD among the descriptions."
+  }
+},
+{
+  "id": "Q62",
+  "query": "What is the name of the benchmark that extends an earlier numerical fact-checking dataset by curating real-world numerical claims, collecting open-domain evidence via decomposed queries that emulate human fact-checkers, and evaluating evidence quality both qualitatively and quantitatively?",
+  "instruction": "You are evaluating a retrieval-augmented fact-checking system. Use only the provided collection of dataset and benchmark descriptions. Find which benchmark best matches the question and answer with its name only. If you cannot find a conclusive match, return 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "QuanTemp++",
+    "positives": ["https://arxiv.org/pdf/2510.22055v1.pdf"],
+    "dataset_link": "https://github.com/VenkteshV/QuanTemp_Plus"
+  },
+  "meta": {
+    "dataset_description": "Open-domain numerical fact-checking benchmark of real-world numerical claims, paired with evidence gathered by query decomposition and filtering to avoid temporal and justification leakage.",
+    "reasoning": "The query mentions an extension of QuanTemp with real-world numerical claims and FCDecomp-style query generation, which exactly matches QuanTemp++."
+  }
+},
+{
+  "id": "Q63",
+  "query": "Which dataset contains around 6,400 risky text prompts for text-to-image models, each annotated with hierarchical risk categories and detailed risk reasons, and is used to systematically evaluate the safety of T2I systems?",
+  "instruction": "You are an alignment and safety evaluator. From the available benchmark and dataset descriptions about harmful or risky content, identify which resource fits the query. Return only the dataset name, nothing else. If no dataset clearly fits, answer 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "T2I-RiskyPrompt",
+    "positives": ["https://arxiv.org/pdf/2511.04942v1.pdf"],
+    "dataset_link": "https://github.com/datar001/T2I-RiskyPrompt"
+  },
+  "meta": {
+    "dataset_description": "Safety benchmark of 6,432 risky prompts for text-to-image models, annotated with hierarchical risk labels and accompanying explanations to evaluate T2I safety mechanisms.",
+    "reasoning": "The query highlights risky prompts, hierarchical risk categories, detailed reasons, and T2I safety evaluation, which uniquely correspond to T2I-RiskyPrompt."
+  }
+},
+{
+  "id": "Q64",
+  "query": "What is the benchmark that consists of architectural issue–solution sentence pairs mined from Stack Overflow architectural rule patterns and other developer forums, designed to evaluate extraction and modeling of software architecture knowledge?",
+  "instruction": "You are a software-engineering research assistant. Given descriptions of datasets and benchmarks about architecture discussions, map the user’s description to the correct benchmark. Answer with the benchmark name only. If no single benchmark clearly matches, reply 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "ArchISPBench",
+    "positives": ["https://arxiv.org/pdf/2510.21966v1.pdf"],
+    "dataset_link": "https://github.com/JeanMusenga/ArchISPE"
+  },
+  "meta": {
+    "dataset_description": "Benchmark of architectural issue–solution sentence pairs extracted from Stack Overflow architectural rule patterns and related sources, supporting evaluation of models that understand software architecture problems and resolutions.",
+    "reasoning": "The query explicitly mentions architectural issue–solution pairs from Stack Overflow ARPs, which points directly to ArchISPBench."
+  }
+},
+{
+  "id": "Q65",
+  "query": "Which benchmark is introduced as the first visually rich long multi-document visual document retrieval benchmark that jointly evaluates multi-document and long-context retrieval over constructed VS-pages?",
+  "instruction": "You are an information-retrieval expert. You have access to descriptions of visual document retrieval datasets. Identify which benchmark matches the question and respond with the benchmark name only. If uncertain, respond 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "VIMDOC",
+    "positives": ["https://arxiv.org/pdf/2510.22215v1.pdf"],
+    "dataset_link": "https://github.com/juyeonnn/HEAVEN"
+  },
+  "meta": {
+    "dataset_description": "Visually-rich long multi-document retrieval benchmark that builds VS-pages and jointly tests multi-document and long-context visual document retrieval.",
+    "reasoning": "The query describes a visually rich long multi-document retrieval benchmark called VIMDOC in the dataset card."
+  }
+},
+{
+  "id": "Q66",
+  "query": "What is the name of the benchmark that defines eleven structured electronic health record tasks, with about 2,200 evaluation samples, to assess large language models’ reasoning over tabular EHR data and is paired with an EHRMaster framework?",
+  "instruction": "You are a biomedical NLP assistant. From the available descriptions of healthcare-related datasets, determine which benchmark matches the user’s description. Answer with the benchmark name only. If it cannot be determined, output 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "EHRStruct",
+    "positives": ["https://arxiv.org/pdf/2511.08206v1.pdf"],
+    "dataset_link": ""
+  },
+  "meta": {
+    "dataset_description": "Benchmark for structured EHR understanding comprising 11 diverse tasks and 2,200 examples, aimed at evaluating LLMs’ abilities on tabular electronic health record reasoning, released together with the EHRMaster framework.",
+    "reasoning": "The mention of 11 structured EHR tasks, 2,200 samples, and the EHRMaster framework uniquely matches EHRStruct."
+  }
+},
+{
+  "id": "Q67",
+  "query": "Which benchmark is a comprehensive multimodal VQA dataset for brain imaging that spans 15 imaging modalities, includes over 31,000 images, and contains 9,527 carefully validated question–answer pairs?",
+  "instruction": "You are evaluating multimodal medical-imaging benchmarks. Use the corpus of benchmark descriptions to identify the one that best matches the query. Respond only with the benchmark name. If you cannot find a confident match, answer 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "OmniBrainBench",
+    "positives": ["https://arxiv.org/pdf/2511.00846v1.pdf"],
+    "dataset_link": ""
+  },
+  "meta": {
+    "dataset_description": "Multimodal brain imaging VQA benchmark covering 15 imaging modalities, 31,706 images, and 9,527 validated question–answer pairs for assessing MLLMs on brain-related tasks.",
+    "reasoning": "The combination of 15 modalities and 9,527 VQA pairs over more than 31k images directly describes OmniBrainBench."
+  }
+},
+{
+  "id": "Q68",
+  "query": "What is the benchmark that evaluates large language models acting as scholarly assistants by testing citation retrieval, content extraction, paper discovery, and claim verification through realistic web-based workflows?",
+  "instruction": "You are an academic search assistant. Look through the descriptions of benchmarks for scholarly LLM assistants and identify the one that matches the requested capabilities. Answer with the benchmark name only. If there is no clear match, output 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "PaperAsk",
+    "positives": ["https://arxiv.org/pdf/2510.22242v1.pdf"],
+    "dataset_link": ""
+  },
+  "meta": {
+    "dataset_description": "Benchmark that systematically measures LLM performance as a scholarly assistant on tasks like citation retrieval, content extraction, paper recommendation, and scientific claim verification via simulated web workflows.",
+    "reasoning": "The focus on scholarly assistance tasks and web-based workflows exactly matches the PaperAsk benchmark description."
+  }
+},
+{
+  "id": "Q69",
+  "query": "Which dataset builds multi-stage counseling dialogues for acute panic episodes from first-person narratives and Psychological First Aid guidelines, and is used to train and evaluate the PACER model for panic support?",
+  "instruction": "You are a mental-health NLP assistant. From the dataset descriptions on counseling and psychological support, determine which one matches the question. Answer only with the dataset name. If you cannot decide, respond 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "PACE",
+    "positives": ["https://arxiv.org/pdf/2510.21143v2.pdf"],
+    "dataset_link": "https://github.com/JihyunLee1/PanicToCalm"
+  },
+  "meta": {
+    "dataset_description": "Counseling dataset for acute panic episodes that constructs multi-stage dialogues grounded in first-person narratives and Psychological First Aid guidelines, used with the PACER model.",
+    "reasoning": "The query explicitly references acute panic episodes, PFA guidelines, and PACER, which uniquely aligns with the PACE dataset."
+  }
+},
+{
+  "id": "Q70",
+  "query": "What is the name of the generative, synthetic, and formally verified benchmark that creates temporal traces for tasks such as temporal causality extraction and temporal trace extrapolation in order to study large language models’ temporal reasoning and credit assignment?",
+  "instruction": "You are a reasoning-benchmark curator. Using only the corpus of benchmark descriptions, identify which one focuses on synthetic, formally verified temporal traces for evaluating temporal causality and credit assignment. Answer with the benchmark name only. If unsure, reply 'Unknown'.",
+  "ground_truth": {
+    "dataset_name": "TempoBench",
+    "positives": ["https://arxiv.org/pdf/2510.27544v1.pdf"],
+    "dataset_link": ""
+  },
+  "meta": {
+    "dataset_description": "Formally grounded diagnostic benchmark that synthesizes temporal traces and tasks such as temporal causality extraction and temporal trace extrapolation to probe temporal reasoning and credit assignment in LLMs.",
+    "reasoning": "The description of a synthetic, formally verified benchmark for temporal reasoning and tasks like TCE/TTE corresponds to TempoBench."
+  }
+}
+
+
+]

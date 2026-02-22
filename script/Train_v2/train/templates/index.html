@@ -1,0 +1,469 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Savvy Dataset Crawler Console</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-header-inner">
+        <div class="logo">
+          <span class="logo-dot"></span>
+          <span class="logo-text">Savvy Dataset Crawler</span>
+        </div>
+        <div class="header-meta">
+          <span id="stats-count">Loading index...</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <!-- 左侧：标题 + Tab -->
+      <section class="search-panel">
+        <h1 class="search-title">控制面板</h1>
+        <p class="search-subtitle">
+          通过 Web 界面控制 arXiv 爬取、配置模型、浏览已发现的数据集。
+        </p>
+
+        <div class="search-hints tabs-row">
+          <button class="hint-chip chip-active" data-tab="tab-config">
+            配置栏
+          </button>
+          <button class="hint-chip" data-tab="tab-crawl">爬取栏</button>
+          <button class="hint-chip" data-tab="tab-search">检索栏</button>
+        </div>
+
+        <p class="panel-desc">
+          配置栏用于调整 BERT/LLM 描述提取、链接分类和并发参数；爬取栏通过按钮启动或停止主循环；检索栏展示当前索引到的
+          Dataset Link，并提供简单关键字搜索。
+        </p>
+      </section>
+
+      <!-- 右侧：三个 Tab 面板 -->
+      <div class="right-col">
+        <!-- ========= 配置栏 ========= -->
+        <section class="result-panel tab-panel" id="tab-config">
+          <div class="result-header">
+            <h2>运行配置 (CONFIG)</h2>
+            <span class="result-count">与 Python CONFIG 保持同步</span>
+          </div>
+
+          <form id="config-form" class="config-grid">
+            <div class="config-group">
+              <h3>描述抽取 (Description)</h3>
+              <label>
+                描述来源 DESC_SOURCE
+                <select name="DESC_SOURCE">
+                  <option value="llm">llm（LLM 贴标签）</option>
+                  <option value="bert">bert（BERT 模型）</option>
+                </select>
+              </label>
+
+              <label>
+                LAST_N_DAYS（抓取最近多少天）
+                <input type="number" name="LAST_N_DAYS" min="1" max="60" />
+              </label>
+
+              <label>
+                BERT_THRESHOLD（BERT 过滤阈值）
+                <input
+                  type="number"
+                  step="0.01"
+                  name="BERT_THRESHOLD"
+                  min="0"
+                  max="1"
+                />
+              </label>
+            </div>
+
+            <div class="config-group">
+              <h3>链接分类 & 主链选择</h3>
+              <label>
+                LINK_CLASSIFIER
+                <select name="LINK_CLASSIFIER">
+                  <option value="rule">rule（纯规则）</option>
+                  <option value="llm">llm（LLM 分类）</option>
+                </select>
+              </label>
+
+              <label>
+                LINK_PICKER
+                <select name="LINK_PICKER">
+                  <option value="hybrid">
+                    hybrid（规则优先 + LLM 兜底）
+                  </option>
+                  <option value="rule">rule</option>
+                  <option value="llm">llm</option>
+                </select>
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" name="LATEX_LLM_DISABLED" />
+                禁用 LaTeX 阶段 LLM（只用规则选择 Dataset Link）
+              </label>
+
+              <label>
+                PRIMARY_HOST_TOPK（优先主机 Top-K）
+                <input
+                  type="number"
+                  name="PRIMARY_HOST_TOPK"
+                  min="1"
+                  max="20"
+                />
+              </label>
+            </div>
+
+            <div class="config-group">
+              <h3>性能 & 并发</h3>
+              <label>
+                WORKERS（整体并发）
+                <input type="number" name="WORKERS" min="1" max="16" />
+              </label>
+
+              <label>
+                PDF_MAX_CONCURRENCY（PDF 下载并发）
+                <input
+                  type="number"
+                  name="PDF_MAX_CONCURRENCY"
+                  min="1"
+                  max="16"
+                />
+              </label>
+
+              <button type="submit" class="button-primary full-width">
+                保存配置
+              </button>
+              <div id="config-save-tip" class="config-tip"></div>
+            </div>
+          </form>
+        </section>
+
+        <!-- ========= 爬取栏 ========= -->
+        <section class="result-panel tab-panel hidden" id="tab-crawl">
+          <div class="result-header">
+            <h2>爬取控制</h2>
+            <span class="result-count" id="crawl-status-text">
+              状态：未知
+            </span>
+          </div>
+
+          <div class="crawl-controls">
+            <button id="btn-start-crawl" class="button-primary">
+              启动实时爬取循环
+            </button>
+            <button id="btn-stop-crawl" class="button-secondary">
+              停止当前循环
+            </button>
+          </div>
+
+          <div class="crawl-meta">
+            <div>
+              上次启动时间：<span id="crawl-last-start">-</span>
+            </div>
+            <div>
+              上次停止时间：<span id="crawl-last-stop">-</span>
+            </div>
+          </div>
+
+          <div class="empty-state">
+            <p>
+              说明：点击“启动”会在后台线程中运行
+              <code>main_loop</code>，按照当前 CONFIG 设置定期爬取
+              arXiv，抽取数据集描述和 Dataset Link，并写入 OUT_FINAL。
+            </p>
+          </div>
+        </section>
+
+        <!-- ========= 检索栏 ========= -->
+        <section class="result-panel tab-panel hidden" id="tab-search">
+          <div class="result-header">
+            <h2>检索栏（Demo 检索接口）</h2>
+            <span class="result-count" id="result-count">尚未查询</span>
+          </div>
+
+          <div class="search-box">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="例如：vision-language dataset, graph benchmark, medical image segmentation..."
+            />
+            <button id="search-button">Search</button>
+          </div>
+
+          <div class="search-hints">
+            <span class="hint-label">示例查询：</span>
+            <button class="hint-chip" data-q="vision-language dataset">
+              vision-language dataset
+            </button>
+            <button class="hint-chip" data-q="graph classification benchmark">
+              graph classification benchmark
+            </button>
+            <button
+              class="hint-chip"
+              data-q="medical image segmentation dataset"
+            >
+              medical image segmentation dataset
+            </button>
+          </div>
+
+          <div id="result-list" class="result-list"></div>
+
+          <div id="empty-state" class="empty-state" style="display: none">
+            <p>没有检索到数据集。</p>
+            <p class="empty-tip">
+              可以尝试换一个任务 / 模态的关键词；后续你可以把这个接口换成自己的检索模型。
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      Savvy · arXiv Dataset Miner · Web 控制台
+    </footer>
+
+    <script>
+      // ===================== Tab 切换 =====================
+      const tabButtons = document.querySelectorAll("[data-tab]");
+      const tabPanels = document.querySelectorAll(".tab-panel");
+
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const target = btn.dataset.tab;
+          tabButtons.forEach((b) =>
+            b.classList.toggle("chip-active", b === btn)
+          );
+          tabPanels.forEach((p) =>
+            p.classList.toggle("hidden", p.id !== target)
+          );
+        });
+      });
+
+      // ===================== 配置：加载 & 保存 =====================
+      async function loadConfig() {
+        try {
+          const res = await fetch("/api/config");
+          const data = await res.json();
+          const form = document.getElementById("config-form");
+          for (const [k, v] of Object.entries(data)) {
+            const el = form.elements[k];
+            if (!el) continue;
+            if (el.type === "checkbox") {
+              el.checked = Boolean(v);
+            } else {
+              el.value = v;
+            }
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+      document
+        .getElementById("config-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const form = e.target;
+          const payload = {
+            DESC_SOURCE: form.DESC_SOURCE.value,
+            LINK_CLASSIFIER: form.LINK_CLASSIFIER.value,
+            LINK_PICKER: form.LINK_PICKER.value,
+            LATEX_LLM_DISABLED: form.LATEX_LLM_DISABLED.checked,
+            LAST_N_DAYS: Number(form.LAST_N_DAYS.value),
+            BERT_THRESHOLD: Number(form.BERT_THRESHOLD.value),
+            WORKERS: Number(form.WORKERS.value),
+            PDF_MAX_CONCURRENCY: Number(form.PDF_MAX_CONCURRENCY.value),
+            PRIMARY_HOST_TOPK: Number(form.PRIMARY_HOST_TOPK.value),
+          };
+          try {
+            const res = await fetch("/api/config", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            });
+            const data = await res.json();
+            const tip = document.getElementById("config-save-tip");
+            if (data.ok) {
+              tip.textContent = "配置已保存（对新一轮循环生效）";
+            } else {
+              tip.textContent = "保存失败，请查看后端日志";
+            }
+          } catch (err) {
+            console.error(err);
+          }
+        });
+
+      // ===================== 爬取：状态 & 控制 =====================
+      async function refreshCrawlStatus() {
+        try {
+          const res = await fetch("/api/crawl/status");
+          const data = await res.json();
+          document.getElementById("crawl-status-text").textContent =
+            "状态：" + (data.status_text || "未知");
+
+          const fmt = (t) =>
+            !t ? "-" : new Date(t * 1000).toLocaleString("zh-CN");
+          document.getElementById("crawl-last-start").textContent = fmt(
+            data.last_start
+          );
+          document.getElementById("crawl-last-stop").textContent = fmt(
+            data.last_stop
+          );
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+      document
+        .getElementById("btn-start-crawl")
+        .addEventListener("click", async () => {
+          await fetch("/api/crawl/start", { method: "POST" });
+          refreshCrawlStatus();
+        });
+
+      document
+        .getElementById("btn-stop-crawl")
+        .addEventListener("click", async () => {
+          await fetch("/api/crawl/stop", { method: "POST" });
+          refreshCrawlStatus();
+        });
+
+      // 每 5 秒刷新一次状态
+      setInterval(refreshCrawlStatus, 5000);
+
+      // ===================== 检索：dataset 搜索 =====================
+      async function fetchStats() {
+        try {
+          const res = await fetch("/api/stats");
+          const data = await res.json();
+          const el = document.getElementById("stats-count");
+          el.textContent = `${data.count} datasets indexed`;
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+      function createResultCard(item) {
+        const card = document.createElement("article");
+        card.className = "result-card";
+
+        const titleRow = document.createElement("div");
+        titleRow.className = "result-title-row";
+
+        const paperLink = document.createElement("a");
+        paperLink.href = item.paper_link;
+        paperLink.target = "_blank";
+        paperLink.rel = "noopener noreferrer";
+        paperLink.className = "result-title";
+        paperLink.textContent = item.paper_link || "Paper link";
+
+        const scoreBadge = document.createElement("span");
+        scoreBadge.className = "score-badge";
+        scoreBadge.textContent = `score: ${item.score}`;
+
+        titleRow.appendChild(paperLink);
+        titleRow.appendChild(scoreBadge);
+
+        const datasetRow = document.createElement("div");
+        datasetRow.className = "result-dataset-row";
+        const datasetLabel = document.createElement("span");
+        datasetLabel.className = "dataset-label";
+        datasetLabel.textContent = "Dataset:";
+        const datasetLink = document.createElement("a");
+        datasetLink.href = item.dataset_link;
+        datasetLink.target = "_blank";
+        datasetLink.rel = "noopener noreferrer";
+        datasetLink.textContent = item.dataset_link || "Dataset link";
+        datasetRow.appendChild(datasetLabel);
+        datasetRow.appendChild(datasetLink);
+
+        const desc = document.createElement("p");
+        desc.className = "result-desc";
+        desc.textContent = item.description || "(No description extracted)";
+
+        const meta = document.createElement("div");
+        meta.className = "result-meta";
+        meta.textContent = item.timestamp
+          ? `Last seen at ${item.timestamp}`
+          : "";
+
+        card.appendChild(titleRow);
+        card.appendChild(datasetRow);
+        card.appendChild(desc);
+        card.appendChild(meta);
+
+        return card;
+      }
+
+      async function doSearch(query) {
+        const listEl = document.getElementById("result-list");
+        const countEl = document.getElementById("result-count");
+        const emptyEl = document.getElementById("empty-state");
+
+        listEl.innerHTML = "";
+        emptyEl.style.display = "none";
+        countEl.textContent = "Searching...";
+
+        try {
+          const res = await fetch("/api/search?q=" + encodeURIComponent(query));
+          const data = await res.json();
+          const results = data.results || [];
+
+          if (!query) {
+            countEl.textContent = `Showing ${results.length} latest datasets`;
+          } else {
+            countEl.textContent = `${results.length} result(s) for “${query}”`;
+          }
+
+          if (results.length === 0) {
+            emptyEl.style.display = "block";
+            return;
+          }
+
+          results.forEach((item) => {
+            const card = createResultCard(item);
+            listEl.appendChild(card);
+          });
+        } catch (e) {
+          console.error(e);
+          countEl.textContent = "Search failed. Please check backend logs.";
+        }
+      }
+
+      function setupSearchInteractions() {
+        const input = document.getElementById("search-input");
+        const btn = document.getElementById("search-button");
+
+        btn.addEventListener("click", () => doSearch(input.value));
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") {
+            doSearch(input.value);
+          }
+        });
+
+        document.querySelectorAll(".hint-chip[data-q]").forEach((chip) => {
+          chip.addEventListener("click", () => {
+            const q = chip.getAttribute("data-q");
+            if (!q) return;
+            input.value = q;
+            doSearch(q);
+          });
+        });
+      }
+
+      // ===================== 初始化 =====================
+      loadConfig();
+      refreshCrawlStatus();
+      fetchStats();
+      setupSearchInteractions();
+      // 默认在检索栏中展示最新若干条
+      doSearch("");
+    </script>
+  </body>
+</html>
